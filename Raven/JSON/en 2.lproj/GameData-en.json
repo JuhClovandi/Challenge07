@@ -1,0 +1,82 @@
+{
+    "category": "Mystery",
+    "stories": [
+        {
+            "story": {
+                "id": "1",
+                "title": "TEST STORY 1",
+                "locked": false,
+                "short": "A man rushes through the door holding an envelope, but stops when he hears a sound and freezes.",
+                "answer": "The man entered the hospital with the results of a test that could save his sister's life. When he approached her room, he heard the monitor turn off and realized she had just passed away."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        { "text": "He entered the place alone.", "type": true },
+                        { "text": "The room had a characteristic smell of cleaning.", "type": true },
+                        { "text": "He saw someone leave the room moments before the sound.", "type": false },
+                        { "text": "The envelope contained an important document.", "type": true }
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        { "text": "He received a call before hearing the sound.", "type": false },
+                        { "text": "The envelope's contents could save someone.", "type": true },
+                        { "text": "The sound indicated a change.", "type": true },
+                        { "text": "The environment was divided into wings.", "type": true }
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        { "text": "The sound indicated that a person was lifeless.", "type": true },
+                        { "text": "A family member's name was on the envelope.", "type": true },
+                        { "text": "He heard footsteps behind him but didn't turn around.", "type": false },
+                        { "text": "A beeping sound seemed to monitor something important.", "type": true }
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "2",
+                "title": "TEST STORY 2",
+                "locked": false,
+                "short": "A woman living alone found a strange note in her apartment: 'Trust no one inside the house.'",
+                "answer": "The woman suffers from a neurological condition that causes hallucinations and temporary memory loss. She wrote the note to alert herself, as her hallucination made her believe someone else was with her, even though she lived alone. The sense of presence and the note are manifestations of her condition."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        { "text": "She hadn't left the apartment before finding the note.", "type": true },
+                        { "text": "There was a faint smell in the air she couldn't identify but seemed familiar.", "type": false },
+                        { "text": "The note was in a visible spot for her as soon as she woke up.", "type": true },
+                        { "text": "No misplaced objects caught her attention.", "type": true }
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        { "text": "The handwriting on the note was not unfamiliar to her.", "type": true },
+                        { "text": "The woman felt as if someone was there with her.", "type": true },
+                        { "text": "Sometimes she forgot whether she had locked the door or not.", "type": true },
+                        { "text": "Furniture seemed to have been subtly moved.", "type": false }
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        { "text": "The woman frequently talked to herself.", "type": true },
+                        { "text": "The apartment door had been locked since the previous night.", "type": true },
+                        { "text": "The woman saw dirt tracks at the entrance of the house.", "type": false },
+                        { "text": "She had found similar notes before, as if from someone very close.", "type": true }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
