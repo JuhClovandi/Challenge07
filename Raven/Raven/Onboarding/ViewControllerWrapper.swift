@@ -23,16 +23,21 @@
 // - O ViewControllerWrapper é como uma ponte entre SwiftUI e UIKit.
 // - Ele chama o seu UIViewController (a tela feita em UIKit).
 // - Assim, você pode misturar UIKit e SwiftUI no mesmo app.
-//git
+//
 
 import SwiftUI
 
 // Este struct conecta a tela UIKit com o SwiftUI
 struct ViewControllerWrapper: UIViewControllerRepresentable {
     
+    
     //Criar a tela UIKit quando o SwiftUI precisa mostrar
     func makeUIViewController(context: Context) -> some UIViewController {
         let vc = ViewController() //intancia o UIViewController
+        /*
+        Aqui no return eu coloco que vai estar dentro de uma NavigatioController caso eu queira montar uma hierarquia de telas.
+        mas nesse caso nao é necessario ja que é o onBoarding
+         */
         return vc
     }
     
@@ -47,12 +52,7 @@ struct ViewControllerWrapper: UIViewControllerRepresentable {
     }
     
     //Coodinator é o tradutor entre UIKit e SwiftUI
-    class Coordinator: NSObject, UIViewControllerDelegate {
-        func botaoClicado() {
-    
-        }
-        
-        
+    class Coordinator: NSObject {
         var parent: ViewControllerWrapper
         
         init(_ parent: ViewControllerWrapper) {

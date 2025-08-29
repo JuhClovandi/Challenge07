@@ -11,7 +11,8 @@ import SwiftUI
 struct RavenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            Text("oi")
+            OnboardingView()
         }
     }
 }
