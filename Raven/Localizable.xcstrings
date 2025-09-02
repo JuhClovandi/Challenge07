@@ -1,6 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+
     "OnboardingButtonText1" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -129,6 +130,21 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Organize 2"
+
+    "mistery-category" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Category"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categoria"
+
           }
         }
       }

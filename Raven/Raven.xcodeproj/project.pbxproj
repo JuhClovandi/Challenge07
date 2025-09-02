@@ -50,6 +50,21 @@
 			path = RavenUITests;
 			sourceTree = "<group>";
 		};
+		E7BC260F2E54FBE600D0A21B /* JSON */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		E7BC26172E550CE800D0A21B /* Localization */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		E7BC26252E550F4900D0A21B /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +95,13 @@
 		8298E4FF2E53AE5A00B0A107 = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				3FF3CF522E623CD900B1F441 /* Localizable.xcstrings */,
+=======
+				E7BC26252E550F4900D0A21B /* Model */,
+				E7BC26172E550CE800D0A21B /* Localization */,
+				E7BC260F2E54FBE600D0A21B /* JSON */,
+>>>>>>> JSON
 				8298E50A2E53AE5A00B0A107 /* Raven */,
 				8298E5182E53AE5B00B0A107 /* RavenTests */,
 				8298E5222E53AE5B00B0A107 /* RavenUITests */,
@@ -115,6 +136,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8298E50A2E53AE5A00B0A107 /* Raven */,
+				E7BC260F2E54FBE600D0A21B /* JSON */,
+				E7BC26172E550CE800D0A21B /* Localization */,
+				E7BC26252E550F4900D0A21B /* Model */,
 			);
 			name = Raven;
 			packageProductDependencies = (
@@ -198,8 +222,16 @@
 			knownRegions = (
 				en,
 				Base,
+<<<<<<< HEAD
 				bn,
 				"pt-BR",
+=======
+				"Base 2",
+				"es-419 2",
+				"es-419",
+				"en 2",
+				"base 2",
+>>>>>>> JSON
 			);
 			mainGroup = 8298E4FF2E53AE5A00B0A107;
 			minimizedProjectReferenceProxies = 1;
@@ -408,7 +440,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = MR7Z669DU4;
+=======
+				DEVELOPMENT_TEAM = H4UHBMMHGS;
+>>>>>>> JSON
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = App;
@@ -418,7 +454,11 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+>>>>>>> JSON
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +479,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = MR7Z669DU4;
+=======
+				DEVELOPMENT_TEAM = H4UHBMMHGS;
+>>>>>>> JSON
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = App;
@@ -449,7 +493,11 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+>>>>>>> JSON
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
