@@ -1,0 +1,138 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "OnboardingButtonText1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proximo"
+          }
+        }
+      }
+    },
+    "OnboardingButtonText2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concluido"
+          }
+        }
+      }
+    },
+    "OnboardingInstructionText1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubra como usar nosso app."
+          }
+        }
+      }
+    },
+    "OnboardingInstructionText2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarde tudo em um só lugar."
+          }
+        }
+      }
+    },
+    "OnboardingInstructionText3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curta a experiência completa!"
+          }
+        }
+      }
+    },
+    "OnboardingInstructionText4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubra como usar nosso app. 2"
+          }
+        }
+      }
+    },
+    "OnboardingInstructionText5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descubra como usar nosso app. 3"
+          }
+        }
+      }
+    },
+    "OnboardingTitleText1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bem-Vindo"
+          }
+        }
+      }
+    },
+    "OnboardingTitleText2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Organize"
+          }
+        }
+      }
+    },
+    "OnboardingTitleText3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aproveite"
+          }
+        }
+      }
+    },
+    "OnboardingTitleText4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bem-Vindo 2"
+          }
+        }
+      }
+    },
+    "OnboardingTitleText5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Organize 2"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
