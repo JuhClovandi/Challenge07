@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+//Fontes
+
+//DMSerifText-Regular
+//MozillaHeadlineCondensed-ExtraLight
+
 struct ContentView: View {
     @StateObject var viewModel = GameViewModel()
     @State private var selectedStoryID: String? = nil

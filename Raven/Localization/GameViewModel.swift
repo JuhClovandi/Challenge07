@@ -10,6 +10,7 @@ import SwiftUI
 
 class GameViewModel: ObservableObject {
     @Published var gameData: GameData?
+    @Published var isFlipped: Bool = false
 
     init() {
         loadGameData()
@@ -21,5 +22,9 @@ class GameViewModel: ObservableObject {
     
     func getStory(by id: String) -> Story? {
         return gameData?.stories.first { $0.storyDetail.id == id }
+    }
+    
+    func flipCard() {
+        isFlipped.toggle()
     }
 }

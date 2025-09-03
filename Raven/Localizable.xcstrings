@@ -1,153 +1,235 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Apenas para o mestre!" : {
 
-    "OnboardingButtonText1" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Proximo"
-          }
-        }
-      }
     },
-    "OnboardingButtonText2" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Concluido"
-          }
-        }
-      }
-    },
-    "OnboardingInstructionText1" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descubra como usar nosso app."
-          }
-        }
-      }
-    },
-    "OnboardingInstructionText2" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guarde tudo em um só lugar."
-          }
-        }
-      }
-    },
-    "OnboardingInstructionText3" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Curta a experiência completa!"
-          }
-        }
-      }
-    },
-    "OnboardingInstructionText4" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descubra como usar nosso app. 2"
-          }
-        }
-      }
-    },
-    "OnboardingInstructionText5" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descubra como usar nosso app. 3"
-          }
-        }
-      }
-    },
-    "OnboardingTitleText1" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bem-Vindo"
-          }
-        }
-      }
-    },
-    "OnboardingTitleText2" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Organize"
-          }
-        }
-      }
-    },
-    "OnboardingTitleText3" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aproveite"
-          }
-        }
-      }
-    },
-    "OnboardingTitleText4" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bem-Vindo 2"
-          }
-        }
-      }
-    },
-    "OnboardingTitleText5" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Organize 2"
+    "Aqui vai o conteúdo completo da história..." : {
 
-    "mistery-category" : {
-      "extractionState" : "manual",
+    },
+    "Aqui você pode explicar como o jogo funciona, quais são as regras, e dar dicas para os jogadores." : {
+
+    },
+    "Assista a um anúncio para desbloquear essa categoria" : {
+
+    },
+    "Bem-vindo" : {
+
+    },
+    "Categorias" : {
+
+    },
+    "Começar" : {
+
+    },
+    "Descrição" : {
+
+    },
+    "Essa história está bloqueada." : {
+
+    },
+    "Fechar" : {
+
+    },
+    "História" : {
+
+    },
+    "História Completa" : {
+
+    },
+    "Histórias" : {
+
+    },
+    "Instruções" : {
+
+    },
+    "Instruções do Jogo" : {
+
+    },
+    "Leia para todos os jogadores!" : {
+
+    },
+    "Onboarding.Button.Text1" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Category"
+            "value" : "Next"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Categoria"
-
+            "value" : "Próximo"
           }
         }
       }
+    },
+    "Onboarding.Button.Text2" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concluir"
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "base 2" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O jogo deve ser jogado em grupo. Escolham se o mistério será guiado por um jogador ou pelo celular."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teste1"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O jogo deve ser jogado em grupo. Escolham se o mistério será guiado por um jogador ou pelo celular."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "base 2" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Mestre (jogador ou celular) revela a descrição inicial aos jogadores e guarda o restante do caso em segredo."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teste2"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Mestre (jogador ou celular) revela a descrição inicial aos jogadores e guarda o restante do caso em segredo."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "base 2" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A cada rodada surgem novas pistas, mas sempre haverá uma falsa entre elas. Cuidado: nem tudo é o que parece."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teste3"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A cada rodada surgem novas pistas, mas sempre haverá uma falsa entre elas. Cuidado: nem tudo é o que parece."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "base 2" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O desafio é descobrir o contexto correto do caso. Reflitam sobre as pistas e debatam suas interpretações."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teste4"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O desafio é descobrir o contexto correto do caso. Reflitam sobre as pistas e debatam suas interpretações."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "base 2" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O mistério termina quando o grupo chega a um consenso sobre a história final e a verdade é revelada"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teste5"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O mistério termina quando o grupo chega a um consenso sobre a história final e a verdade é revelada"
+          }
+        }
+      }
+    },
+    "Onboarding.Title.Text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "base 2" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instruções de Jogo"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titulo teste"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instruções de Jogo"
+          }
+        }
+      }
+    },
+    "RASPE PARA REVELAR" : {
+
+    },
+    "Resposta final:" : {
+
+    },
+    "Round %lld" : {
+
+    },
+    "Vire a carta para ver a história completa" : {
+
     }
   },
   "version" : "1.0"

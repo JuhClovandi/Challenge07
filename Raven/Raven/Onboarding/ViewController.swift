@@ -47,20 +47,23 @@ class ViewController: UIViewController {
     
     //Conteudo das telas
     let onboardingPages = [
-        (title: "OnboardingTitleText1", image: "person.3.fill", instruction: "OnboardingInstructionText1"),
-        (title: "OnboardingTitleText2", image: "tray.fill", instruction: "OnboardingInstructionText2"),
-        (title: "OnboardingTitleText3", image: "star.fill", instruction: "OnboardingInstructionText3"),
-        (title: "OnboardingTitleText4", image: "person.3.fill", instruction: "OnboardingInstructionText4"),
-        (title: "OnboardingTitleText5", image: "tray.fill", instruction: "OnboardingInstructionText5")
+        (title: "Onboarding.Title.Text", image: "person.3.fill", instruction: "Onboarding.Instruction.Text1"),
+        (title: "Onboarding.Title.Text", image: "tray.fill", instruction: "Onboarding.Instruction.Text2"),
+        (title: "Onboarding.Title.Text", image: "star.fill", instruction: "Onboarding.Instruction.Text3"),
+        (title: "Onboarding.Title.Text", image: "person.3.fill", instruction: "Onboarding.Instruction.Text4"),
+        (title: "Onboarding.Title.Text", image: "tray.fill", instruction: "Onboarding.Instruction.Text5")
     ]
     
     //Aqui vai dizer para o PageControl onde ele esta
     var page = 0
     
     
+    
     //Metodo chamado quando a tela é carregada
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(named: "Background" )
         
         //Funcao de Scroll dos lados
         // Swipe para a esquerda
@@ -82,12 +85,6 @@ class ViewController: UIViewController {
         
         setupButton()
         
-        //Butao de skip do tutorial (Linkar ao lado do titulo)
-        skipButton.setTitle("Skip", for: .normal)
-        skipButton.addTarget(self, action: #selector(skipButtonTapped), for: .touchUpInside)
-        skipButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(skipButton)
-        
         setupPageControl()
  
         
@@ -95,25 +92,37 @@ class ViewController: UIViewController {
         //Posicionar itens na tela
         NSLayoutConstraint.activate([
             image.centerXAnchor.constraint(equalTo: view.centerXAnchor), //Ancora de Eixo X
-            image.centerYAnchor.constraint(equalTo: view.centerYAnchor), //Ancora de Eixo Y
-            image.heightAnchor.constraint(equalToConstant: 100),
+            image.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -56), //Ancora de Eixo Y
+            image.heightAnchor.constraint(equalToConstant: 136),
             
             labelTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor), //Ancora no centro horizontal da tela
-            labelTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 32), //Ancora no topo da tela
+            labelTitle.bottomAnchor.constraint(equalTo: image.topAnchor, constant: -120), //Ancora no topo da tela
             
             labelInstruction.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            labelInstruction.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 24),
+            labelInstruction.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 40),
+            labelInstruction.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
+            labelInstruction.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
             
             pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            pageControl.topAnchor.constraint(equalTo: botao.bottomAnchor ,constant: 16),
             
             botao.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            botao.bottomAnchor.constraint(equalTo: pageControl.topAnchor),
+            botao.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 240),
+            botao.widthAnchor.constraint(equalToConstant: 290),
+            botao.heightAnchor.constraint(equalToConstant: 40)
             
-            skipButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 29),
-            skipButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24)
         ])
         
+        //Listar fontes
+//        for family in UIFont.familyNames {
+//            print("Family: \(family)")
+//            for name in UIFont.fontNames(forFamilyName: family) {
+//                print("   Font: \(name)")
+//            }
+//        }
+//        
+        //DMSerifText-Regular
+        //MozillaHeadlineCondensed-ExtraLight
         updateContent()
         
         
@@ -124,11 +133,12 @@ class ViewController: UIViewController {
         //Titulo para da pagina de Onboarding (Linkado na imagem de centro da tela)
         labelTitle = UILabel()
         labelTitle.text = TitleText
+        labelTitle.textColor = UIColor(named: "Title")
         labelTitle.textAlignment = .center
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
         
         //Ativando Dynamics Types
-        if  let titleFont = UIFont(name: "AvenirNext-Regular", size: 18) {
+        if  let titleFont = UIFont(name: "DMSerifText-Regular", size: 38) {
             labelTitle.font = UIFontMetrics(forTextStyle: .headline).scaledFont(for: titleFont)
             labelTitle.adjustsFontForContentSizeCategory = true
         }
@@ -143,6 +153,7 @@ class ViewController: UIViewController {
         image = UIImageView()
         image.image = UIImage(systemName: imageString)
         image.contentMode = .scaleAspectFill
+        image.tintColor = .white
         
         image.translatesAutoresizingMaskIntoConstraints = false
         
@@ -154,11 +165,13 @@ class ViewController: UIViewController {
         //Texto de instrução (Linkado na parte de baixo da imagem de referencia)
         labelInstruction = UILabel()
         labelInstruction.text = instructionText
+        labelInstruction.numberOfLines = 0
         labelInstruction.textAlignment = .center
+        labelInstruction.textColor = .white
         labelInstruction.translatesAutoresizingMaskIntoConstraints = false
         
         //Ativando Dynamics Types
-        if let instructionFont = UIFont(name: "AvenirNext-Regular", size: 14){
+        if let instructionFont = UIFont(name: "MozillaHeadlineCondensed-ExtraLight", size: 24){
             labelInstruction.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: instructionFont)
             labelInstruction.adjustsFontForContentSizeCategory = true
         }
@@ -170,6 +183,18 @@ class ViewController: UIViewController {
     func setupButton(){
         //Criando botao em UIKit
         botao.setTitle("Próximo", for: .normal)
+        botao.setTitleColor(UIColor(named: "TipsTextColor"), for: .normal)
+        botao.backgroundColor = UIColor(named: "ButtonBackground")
+        
+        if let shodowColor = UIColor(named: "ButtonBackground"){
+            botao.layer.shadowColor = shodowColor.cgColor
+            botao.layer.shadowRadius = 8
+            botao.layer.shadowOpacity = 1
+            botao.layer.shadowOffset = CGSize(width: 2, height: 2)
+            botao.layer.cornerRadius = 20
+        }
+
+        
         
         //Aqui diz para que quando clicar no botao ele chamar a funcao botaoClicado
         botao.addTarget(self, action: #selector(botaoClicado), for: .touchUpInside)
@@ -193,8 +218,9 @@ class ViewController: UIViewController {
         pageControl = UIPageControl()
         pageControl.numberOfPages = onboardingPages.count
         pageControl.currentPage = page
-        pageControl.currentPageIndicatorTintColor = .systemBlue
-        pageControl.pageIndicatorTintColor = .secondaryLabel
+        pageControl.currentPageIndicatorTintColor = UIColor(named: "ButtonBackground")
+        pageControl.pageIndicatorTintColor = UIColor(named: "ButtonBackground")?.withAlphaComponent(0.3)
+        
         pageControl.translatesAutoresizingMaskIntoConstraints = false
         
         //O PageControl tem açoes de toque que vem de forma padrao
@@ -215,9 +241,9 @@ class ViewController: UIViewController {
         
         //Para quando trocar e chegar no final do PageControl ele mudar o text
         if page == onboardingPages.count - 1 {
-            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "OnboardingButtonText2")), for: .normal)
+            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "Onboarding.Button.Text2")), for: .normal)
         }else{
-            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "OnboardingButtonText1")), for: .normal)
+            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "Onboarding.Button.Text1")), for: .normal)
         }
     }
     
