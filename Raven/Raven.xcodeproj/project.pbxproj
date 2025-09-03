@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		3FF3D21D2E67B5FE00B1F441 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3D21C2E67B5FE00B1F441 /* Localizable.xcstrings */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		8298E5162E53AE5B00B0A107 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -28,33 +24,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FF3D21C2E67B5FE00B1F441 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8298E5082E53AE5A00B0A107 /* Raven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8298E5152E53AE5B00B0A107 /* RavenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8298E51F2E53AE5B00B0A107 /* RavenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3F6744722E67CE4600DD4B05 /* Exceptions for "Raven" folder in "Raven" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 8298E5072E53AE5A00B0A107 /* Raven */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3F6744242E67C9D800DD4B05 /* Fonts */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		8298E50A2E53AE5A00B0A107 /* Raven */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3F6744722E67CE4600DD4B05 /* Exceptions for "Raven" folder in "Raven" target */,
-			);
 			path = Raven;
 			sourceTree = "<group>";
 		};
@@ -66,21 +43,6 @@
 		8298E5222E53AE5B00B0A107 /* RavenUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RavenUITests;
-			sourceTree = "<group>";
-		};
-		E7BC260F2E54FBE600D0A21B /* JSON */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JSON;
-			sourceTree = "<group>";
-		};
-		E7BC26172E550CE800D0A21B /* Localization */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Localization;
-			sourceTree = "<group>";
-		};
-		E7BC26252E550F4900D0A21B /* Model */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -113,11 +75,6 @@
 		8298E4FF2E53AE5A00B0A107 = {
 			isa = PBXGroup;
 			children = (
-				3FF3D21C2E67B5FE00B1F441 /* Localizable.xcstrings */,
-				3F6744242E67C9D800DD4B05 /* Fonts */,
-				E7BC26252E550F4900D0A21B /* Model */,
-				E7BC26172E550CE800D0A21B /* Localization */,
-				E7BC260F2E54FBE600D0A21B /* JSON */,
 				8298E50A2E53AE5A00B0A107 /* Raven */,
 				8298E5182E53AE5B00B0A107 /* RavenTests */,
 				8298E5222E53AE5B00B0A107 /* RavenUITests */,
@@ -151,11 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3F6744242E67C9D800DD4B05 /* Fonts */,
 				8298E50A2E53AE5A00B0A107 /* Raven */,
-				E7BC260F2E54FBE600D0A21B /* JSON */,
-				E7BC26172E550CE800D0A21B /* Localization */,
-				E7BC26252E550F4900D0A21B /* Model */,
 			);
 			name = Raven;
 			packageProductDependencies = (
@@ -241,6 +194,7 @@
 				Base,
 				"Base 2",
 				"pt-BR",
+				"base 2",
 			);
 			mainGroup = 8298E4FF2E53AE5A00B0A107;
 			minimizedProjectReferenceProxies = 1;
@@ -261,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF3D21D2E67B5FE00B1F441 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
