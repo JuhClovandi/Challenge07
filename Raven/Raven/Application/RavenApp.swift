@@ -12,7 +12,6 @@ struct RavenApp: App {
     var body: some Scene {
         
         WindowGroup {
-<<<<<<< HEAD
             let hasSeenOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding")
             
             if hasSeenOnboarding {
@@ -21,9 +20,6 @@ struct RavenApp: App {
                 OnboardingView()
             }
             
-=======
-            CategoryView()
->>>>>>> CategoryScreen
         }
     }
 }
