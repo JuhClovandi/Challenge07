@@ -4,8 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>DMSerifText-Regular.ttf</string>
 		<string>MozillaHeadline_Condensed-ExtraLight.ttf</string>
+		<string>DMSerifText-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
