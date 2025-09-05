@@ -29,9 +29,22 @@
 		8298E51F2E53AE5B00B0A107 /* RavenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3F67454C2E6B567300DD4B05 /* Exceptions for "Raven" folder in "Raven" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8298E5072E53AE5A00B0A107 /* Raven */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8298E50A2E53AE5A00B0A107 /* Raven */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3F67454C2E6B567300DD4B05 /* Exceptions for "Raven" folder in "Raven" target */,
+			);
 			path = Raven;
 			sourceTree = "<group>";
 		};
@@ -192,9 +205,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"es-419 2",
-				"es-419",
-				"en 2",
 				"Base 2",
 				"pt-BR",
 			);
@@ -402,9 +412,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZSPRU99F2;
+				DEVELOPMENT_TEAM = MR7Z669DU4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -430,9 +441,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZSPRU99F2;
+				DEVELOPMENT_TEAM = MR7Z669DU4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

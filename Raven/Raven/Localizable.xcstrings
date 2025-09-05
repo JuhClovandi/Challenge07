@@ -4,20 +4,24 @@
     "Apenas para o mestre!" : {
 
     },
-    "Aqui vai o conteúdo completo da história..." : {
-
-    },
-    "Aqui você pode explicar como o jogo funciona, quais são as regras, e dar dicas para os jogadores." : {
-
-    },
-    "Assista a um anúncio para desbloquear essa categoria" : {
-
-    },
     "Bem-vindo" : {
 
     },
     "Categorias" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categories"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categorias"
+          }
+        }
+      }
     },
     "Começar" : {
 
@@ -25,25 +29,7 @@
     "Descrição" : {
 
     },
-    "Essa história está bloqueada." : {
-
-    },
-    "Fechar" : {
-
-    },
-    "História" : {
-
-    },
     "História Completa" : {
-
-    },
-    "Histórias" : {
-
-    },
-    "Instruções" : {
-
-    },
-    "Instruções do Jogo" : {
 
     },
     "Leia para todos os jogadores!" : {
