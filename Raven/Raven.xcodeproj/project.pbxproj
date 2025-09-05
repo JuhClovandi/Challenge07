@@ -58,11 +58,6 @@
 			path = RavenUITests;
 			sourceTree = "<group>";
 		};
-		E7BC26822E67693D00D0A21B /* Rounds */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Rounds;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +92,6 @@
 				8298E5182E53AE5B00B0A107 /* RavenTests */,
 				8298E5222E53AE5B00B0A107 /* RavenUITests */,
 				8298E5092E53AE5A00B0A107 /* Products */,
-				E7BC26822E67693D00D0A21B /* Rounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,7 +122,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8298E50A2E53AE5A00B0A107 /* Raven */,
-				E7BC26822E67693D00D0A21B /* Rounds */,
 			);
 			name = Raven;
 			packageProductDependencies = (
@@ -214,6 +207,9 @@
 				Base,
 				"Base 2",
 				"pt-BR",
+				"es-419 2",
+				"es-419",
+				"en 2",
 			);
 			mainGroup = 8298E4FF2E53AE5A00B0A107;
 			minimizedProjectReferenceProxies = 1;
@@ -421,7 +417,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H4UHBMMHGS;
+				DEVELOPMENT_TEAM = MR7Z669DU4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Raven/Info.plist;
@@ -451,7 +447,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H4UHBMMHGS;
+				DEVELOPMENT_TEAM = MR7Z669DU4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Raven/Info.plist;

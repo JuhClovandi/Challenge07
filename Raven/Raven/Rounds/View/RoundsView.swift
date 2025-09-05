@@ -124,6 +124,6 @@ struct RoundsView: View {
 }
 
 #Preview {
-    // RoundsView()
+//    RoundsView(story: )
 }
 
