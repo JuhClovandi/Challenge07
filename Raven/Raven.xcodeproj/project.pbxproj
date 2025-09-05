@@ -29,9 +29,22 @@
 		8298E51F2E53AE5B00B0A107 /* RavenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E7BC28232E68D50C00D0A21B /* Exceptions for "Raven" folder in "Raven" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8298E5072E53AE5A00B0A107 /* Raven */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8298E50A2E53AE5A00B0A107 /* Raven */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E7BC28232E68D50C00D0A21B /* Exceptions for "Raven" folder in "Raven" target */,
+			);
 			path = Raven;
 			sourceTree = "<group>";
 		};
@@ -43,21 +56,6 @@
 		8298E5222E53AE5B00B0A107 /* RavenUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RavenUITests;
-			sourceTree = "<group>";
-		};
-		E7BC260F2E54FBE600D0A21B /* JSON */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JSON;
-			sourceTree = "<group>";
-		};
-		E7BC26172E550CE800D0A21B /* Localization */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Localization;
-			sourceTree = "<group>";
-		};
-		E7BC26252E550F4900D0A21B /* Model */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E7BC26822E67693D00D0A21B /* Rounds */ = {
@@ -95,9 +93,6 @@
 		8298E4FF2E53AE5A00B0A107 = {
 			isa = PBXGroup;
 			children = (
-				E7BC26252E550F4900D0A21B /* Model */,
-				E7BC26172E550CE800D0A21B /* Localization */,
-				E7BC260F2E54FBE600D0A21B /* JSON */,
 				8298E50A2E53AE5A00B0A107 /* Raven */,
 				8298E5182E53AE5B00B0A107 /* RavenTests */,
 				8298E5222E53AE5B00B0A107 /* RavenUITests */,
@@ -133,9 +128,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8298E50A2E53AE5A00B0A107 /* Raven */,
-				E7BC260F2E54FBE600D0A21B /* JSON */,
-				E7BC26172E550CE800D0A21B /* Localization */,
-				E7BC26252E550F4900D0A21B /* Model */,
 				E7BC26822E67693D00D0A21B /* Rounds */,
 			);
 			name = Raven;
@@ -221,10 +213,6 @@
 				en,
 				Base,
 				"Base 2",
-				"es-419 2",
-				"es-419",
-				"en 2",
-				"base 2",
 				"pt-BR",
 			);
 			mainGroup = 8298E4FF2E53AE5A00B0A107;
@@ -436,6 +424,7 @@
 				DEVELOPMENT_TEAM = H4UHBMMHGS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,6 +454,7 @@
 				DEVELOPMENT_TEAM = H4UHBMMHGS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

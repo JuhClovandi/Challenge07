@@ -1,6 +1,24 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
+    "A descrição pode ser lida quantas vezes for necessário." : {
+
+    },
+    "a história." : {
+
+    },
+    "Antes de prosseguir, confirme se todos os jogadores desejam finalizar " : {
+
+    },
+    "Antes de prosseguir, confirme se todos os jogadores desejam ir para a próxima rodada." : {
+
+    },
+    "Ao avançar não será possível retornar para a rodada anterior." : {
+
+    },
     "Apenas para o mestre!" : {
 
     },
@@ -13,7 +31,13 @@
     "Assista a um anúncio para desbloquear essa categoria" : {
 
     },
+    "Avançar para a próxima rodada" : {
+
+    },
     "Bem-vindo" : {
+
+    },
+    "Cancelar" : {
 
     },
     "Categorias" : {
@@ -25,16 +49,31 @@
     "Descrição" : {
 
     },
+    "Dicas" : {
+
+    },
+    "Dicas Falsas" : {
+
+    },
     "Essa história está bloqueada." : {
 
     },
     "Fechar" : {
 
     },
+    "Fim das rodadas!" : {
+
+    },
+    "Finalizar História" : {
+
+    },
     "História" : {
 
     },
     "História Completa" : {
+
+    },
+    "História Final" : {
 
     },
     "Histórias" : {
@@ -47,6 +86,9 @@
 
     },
     "Leia para todos os jogadores!" : {
+
+    },
+    "Não revele qual delas está fora de contexto." : {
 
     },
     "Onboarding.Button.Text1" : {
@@ -219,13 +261,39 @@
         }
       }
     },
+    "Próxima rodada" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next round"
+          }
+        }
+      }
+    },
     "RASPE PARA REVELAR" : {
 
     },
-    "Resposta final:" : {
+    "Revelar Mistério" : {
 
     },
-    "Round %lld" : {
+    "Rodada %lld/%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rodada %1$lld/%2$lld"
+          }
+        }
+      }
+    },
+    "Sair da história" : {
+
+    },
+    "sair da história?" : {
+
+    },
+    "Tem certeza de que quer " : {
 
     },
     "Vire a carta para ver a história completa" : {
