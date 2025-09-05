@@ -10,11 +10,8 @@ import SwiftUI
 @main
 struct RavenApp: App {
     var body: some Scene {
-        
         WindowGroup {
-<<<<<<< HEAD
-            ContentView()
-=======
+            
             let hasSeenOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding")
             
             if hasSeenOnboarding {
@@ -23,7 +20,6 @@ struct RavenApp: App {
                 OnboardingView()
             }
             
->>>>>>> origin/develop
         }
     }
 }

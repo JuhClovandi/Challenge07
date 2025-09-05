@@ -4,7 +4,6 @@
     "%lld" : {
 
     },
-<<<<<<< HEAD
     "A descrição pode ser lida quantas vezes for necessário." : {
       "localizations" : {
         "en" : {
@@ -151,7 +150,7 @@
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Bem-vindo"
           }
         }
@@ -175,16 +174,12 @@
     },
     "Categorias" : {
       "localizations" : {
-=======
-    "Categorias" : {
-      "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Categories"
           }
         },
->>>>>>> origin/develop
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -257,12 +252,11 @@
         }
       }
     },
-<<<<<<< HEAD
     "Essa história está bloqueada." : {
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Essa história está bloqueada."
           }
         }
@@ -272,7 +266,7 @@
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Fechar"
           }
         }
@@ -326,8 +320,6 @@
         }
       }
     },
-=======
->>>>>>> origin/develop
     "História Completa" : {
       "localizations" : {
         "en" : {
@@ -360,7 +352,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "Histórias" : {
       "localizations" : {
         "en" : {
@@ -409,8 +400,6 @@
         }
       }
     },
-=======
->>>>>>> origin/develop
     "Leia para todos os jogadores!" : {
       "localizations" : {
         "en" : {
