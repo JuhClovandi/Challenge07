@@ -15,23 +15,20 @@ struct ConfirmationView: View {
             Color.background.ignoresSafeArea()
             
             VStack {
-
+                
                 VStack(alignment: .center) {
-                        // arrumar a fonte para usar em negrito
-                        (
-                            Text("Tem certeza de que quer ")
-                            + Text("sair da história?").fontWeight(.bold)
-                        )
-                        .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 16, relativeTo: .title3))
-                        .foregroundStyle(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 20)
-                        .padding(.bottom, 28)
-                        .padding(.top, 28)
-                    
-                    
-
+                    // arrumar a fonte para usar em negrito
+                    (
+                        Text("Tem certeza de que quer ")
+                        + Text("sair da história?").fontWeight(.bold)
+                    )
+                    .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 16, relativeTo: .title3))
+                    .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 20)
+                    .padding(.bottom, 28)
+                    .padding(.top, 28)
                 }
                 .background(.cardBackground)
                 .cornerRadius(6)
