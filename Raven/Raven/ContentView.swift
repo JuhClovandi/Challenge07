@@ -19,7 +19,7 @@ struct ContentView: View {
     var body: some View {
         List {
             if let gameData = viewModel.gameData {
-                Text(gameData.category)
+                Text(gameData.category)                
                     .font(.title)
                     .padding(.bottom, 20)
                 

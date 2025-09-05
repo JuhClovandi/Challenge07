@@ -7,307 +7,285 @@
 import UIKit
 import SwiftUI
 
-//Define um protocolo para enviar eventos do UIKit para SwiftUI
-//protocol UIViewControllerDelegate: AnyObject {
-//    //O que eu for por de interação do UIKIT com o SwiftUI devo por aqui dentro. como por exemplo: func botaoClicado()
-//    func botaoClicado() //metodo que sera chamado quando o botao for clicado
-//}
-
-//UIViewController que será usado dentro do SwiftUI( Tela do UIKit)
+//UIViewController que será usado dentro do SwiftUI (Tela do UIKit)
 class ViewController: UIViewController {
     
-    //Delegate é quem vai receber os avisos ( normalmente o Coordinator). Necessario apenas quando preciso se comunicar
-    //weak var delegate: UIViewControllerDelegate?
+    //PageViewController que vai gerenciar as telas do Onboarding
+    var pageViewController: UIPageViewController!
     
-    //
-    
-    
-    //Titulo para da pagina de Onboarding
-    var TitleText: String = String(localized: "Bem-vindo")
-    var labelTitle: UILabel!
-    
-    //Imagem do centro que representa
-    var imageString: String = "person.3.fill"
-    var image: UIImageView!
-    
-    //Texto de intrucao
-    var instructionText: String = "Instrução"
-    var labelInstruction: UILabel!
-    
-    //Botao
-    let botao = UIButton(type: .system)
-    var buttonText: String = "Teste"
-    
-    //Page Control
+    //PageControl para mostrar em qual página estamos
     var pageControl: UIPageControl!
     
-    //Botao para pular o Onboarding
-    let skipButton: UIButton = .init(type: .system)
-
+    //Botao para avançar para a próxima tela
+    let botao = UIButton(type: .system)
+    
     
     //Conteudo das telas
     let onboardingPages = [
-        (title: "Onboarding.Title.Text", image: "person.3.fill", instruction: "Onboarding.Instruction.Text1"),
-        (title: "Onboarding.Title.Text", image: "tray.fill", instruction: "Onboarding.Instruction.Text2"),
-        (title: "Onboarding.Title.Text", image: "star.fill", instruction: "Onboarding.Instruction.Text3"),
-        (title: "Onboarding.Title.Text", image: "person.3.fill", instruction: "Onboarding.Instruction.Text4"),
-        (title: "Onboarding.Title.Text", image: "tray.fill", instruction: "Onboarding.Instruction.Text5")
+        (image: "person.3.fill", instruction: "Onboarding.Instruction.Text1"),
+        (image: "tray.fill", instruction: "Onboarding.Instruction.Text2"),
+        (image: "star.fill", instruction: "Onboarding.Instruction.Text3"),
+        (image: "person.3.fill", instruction: "Onboarding.Instruction.Text4"),
+        (image: "tray.fill", instruction: "Onboarding.Instruction.Text5")
     ]
     
-    //Aqui vai dizer para o PageControl onde ele esta
+    //Armazena as páginas criadas
+    var pages: [OnboardingPage] = []
+    
+    //Indice atual da página
     var page = 0
     
-    
-    
-    //Metodo chamado quando a tela é carregada
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(named: "Background")
         
-        view.backgroundColor = UIColor(named: "Background" )
+        setupPages()        //Cria cada página do Onboarding
+        setupPageViewController() //Configura o PageViewController
+        setupPageControl()  //Configura o PageControl
+        setupButton()       //Configura botão Próximo
+        setupTitle()
         
-        //Funcao de Scroll dos lados
-        // Swipe para a esquerda
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe(_:)))
-        swipeLeft.direction = .left
-        view.addGestureRecognizer(swipeLeft)
+    }
+    
+    func updateButtonTitle(page: Int) {
         
-        // Swipe para a direita
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe(_:)))
-        swipeRight.direction = .right
-        view.addGestureRecognizer(swipeRight)
-        
-        
-        setupTitleLabel()
+        if page == pages.count - 1 {
+            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "Onboarding.Button.Text2")), for: .normal)
+        } else {
+            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "Onboarding.Button.Text1")), for: .normal)
+        }
+    }
+    
+    //MARK: - Cria páginas individuais
+    func setupPages() {
+        pages = onboardingPages.enumerated().map { index, data in
+            let pageVC = OnboardingPage()
+            pageVC.pageIndex = index
+            pageVC.imageName = data.image
+            pageVC.instructionText = String(localized: LocalizedStringResource(stringLiteral: data.instruction))
 
-        setupImage()
-
-        setupInstructionLabel()
+            
+            return pageVC
+        }
+    }
+    
+    //MARK: - Configura PageViewController
+    func setupPageViewController() {
+        //Cria PageViewController com swipe horizontal
+        pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        pageViewController.dataSource = self
+        pageViewController.delegate = self
         
-        setupButton()
+        //Define a primeira página
+        if let firstVC = pages.first {
+            pageViewController.setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+        }
         
-        setupPageControl()
- 
+        //Adiciona como filho
+        addChild(pageViewController)
+        view.addSubview(pageViewController.view)
+        pageViewController.didMove(toParent: self)
         
-        
-        //Posicionar itens na tela
+        //Faz PageViewController ocupar toda a tela
+        pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            image.centerXAnchor.constraint(equalTo: view.centerXAnchor), //Ancora de Eixo X
-            image.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -56), //Ancora de Eixo Y
-            image.heightAnchor.constraint(equalToConstant: 136),
-            
-            labelTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor), //Ancora no centro horizontal da tela
-            labelTitle.bottomAnchor.constraint(equalTo: image.topAnchor, constant: -120), //Ancora no topo da tela
-            
-            labelInstruction.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            labelInstruction.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 40),
-            labelInstruction.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-            labelInstruction.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            
-            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            pageControl.topAnchor.constraint(equalTo: botao.bottomAnchor ,constant: 16),
-            
-            botao.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            botao.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 240),
-            botao.widthAnchor.constraint(equalToConstant: 290),
-            botao.heightAnchor.constraint(equalToConstant: 40)
-            
+            pageViewController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            pageViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            pageViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            pageViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
-        
-        //Listar fontes
-//        for family in UIFont.familyNames {
-//            print("Family: \(family)")
-//            for name in UIFont.fontNames(forFamilyName: family) {
-//                print("   Font: \(name)")
-//            }
-//        }
-//        
-        //DMSerifText-Regular
-        //MozillaHeadlineCondensed-ExtraLight
-        updateContent()
-        
-        
     }
     
-    //Titulo da pagina
-    func setupTitleLabel() {
-        //Titulo para da pagina de Onboarding (Linkado na imagem de centro da tela)
-        labelTitle = UILabel()
-        labelTitle.text = TitleText
-        labelTitle.textColor = UIColor(named: "Title")
-        labelTitle.textAlignment = .center
-        labelTitle.translatesAutoresizingMaskIntoConstraints = false
-        
-        //Ativando Dynamics Types
-        if  let titleFont = UIFont(name: "DMSerifText-Regular", size: 38) {
-            labelTitle.font = UIFontMetrics(forTextStyle: .headline).scaledFont(for: titleFont)
-            labelTitle.adjustsFontForContentSizeCategory = true
-        }
-        view.addSubview(labelTitle)
-        
-    }
-    
-    
-    //Imagem do centro
-    func setupImage(){
-        //Imagem do centro da tela (Ficara no centro da tela como base)
-        image = UIImageView()
-        image.image = UIImage(systemName: imageString)
-        image.contentMode = .scaleAspectFill
-        image.tintColor = .white
-        
-        image.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(image)
-    }
-    
-    //Subtitulo
-    func setupInstructionLabel(){
-        //Texto de instrução (Linkado na parte de baixo da imagem de referencia)
-        labelInstruction = UILabel()
-        labelInstruction.text = instructionText
-        labelInstruction.numberOfLines = 0
-        labelInstruction.textAlignment = .center
-        labelInstruction.textColor = .white
-        labelInstruction.translatesAutoresizingMaskIntoConstraints = false
-        
-        //Ativando Dynamics Types
-        if let instructionFont = UIFont(name: "MozillaHeadlineCondensed-ExtraLight", size: 24){
-            labelInstruction.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: instructionFont)
-            labelInstruction.adjustsFontForContentSizeCategory = true
-        }
-
-        view.addSubview(labelInstruction)
-    }
-    
-    //Botao
-    func setupButton(){
-        //Criando botao em UIKit
-        botao.setTitle("Próximo", for: .normal)
-        botao.setTitleColor(UIColor(named: "TipsTextColor"), for: .normal)
-        botao.backgroundColor = UIColor(named: "ButtonBackground")
-        
-        if let shodowColor = UIColor(named: "ButtonBackground"){
-            botao.layer.shadowColor = shodowColor.cgColor
-            botao.layer.shadowRadius = 8
-            botao.layer.shadowOpacity = 1
-            botao.layer.shadowOffset = CGSize(width: 2, height: 2)
-            botao.layer.cornerRadius = 20
-        }
-
-        
-        
-        //Aqui diz para que quando clicar no botao ele chamar a funcao botaoClicado
-        botao.addTarget(self, action: #selector(botaoClicado), for: .touchUpInside)
-        
-        // Ativando Auto Layout para posicionar o botao. usar os (Contraints)
-        botao.translatesAutoresizingMaskIntoConstraints = false
-        
-        //Ativando Dynamics Types
-        if let buttonFont = UIFont(name: "AvenirNext-Regular", size: 17){
-            botao.titleLabel?.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: buttonFont)
-            botao.titleLabel?.adjustsFontForContentSizeCategory = true
-        }
-        
-        //Adiciona o botao a tela
-        view.addSubview(botao)
-    }
-    
-    //PageControl
-    func setupPageControl(){
-        //PageControl
+    //MARK: - Configura PageControl
+    func setupPageControl() {
         pageControl = UIPageControl()
-        pageControl.numberOfPages = onboardingPages.count
+        pageControl.numberOfPages = pages.count
         pageControl.currentPage = page
         pageControl.currentPageIndicatorTintColor = UIColor(named: "ButtonBackground")
         pageControl.pageIndicatorTintColor = UIColor(named: "ButtonBackground")?.withAlphaComponent(0.3)
         
         pageControl.translatesAutoresizingMaskIntoConstraints = false
-        
-        //O PageControl tem açoes de toque que vem de forma padrao
-        //Target para fazer funcionar
-        pageControl.addTarget(self, action: #selector(pageControlValueChanged), for: .valueChanged)
-        
         view.addSubview(pageControl)
-    }
-    
-    
-    //Atualiza os conteudo da tela de acordo com a posiçao do vetor de conteudos da tela
-    func updateContent(){
-        let data = onboardingPages[page]
-        labelTitle.text = String(localized: LocalizedStringResource(stringLiteral: data.title))
-        image.image = UIImage(systemName: data.image)
-        labelInstruction.text = String(localized: LocalizedStringResource(stringLiteral: data.instruction))
-        pageControl.currentPage = page
         
-        //Para quando trocar e chegar no final do PageControl ele mudar o text
-        if page == onboardingPages.count - 1 {
-            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "Onboarding.Button.Text2")), for: .normal)
-        }else{
-            botao.setTitle(String(localized: LocalizedStringResource(stringLiteral: "Onboarding.Button.Text1")), for: .normal)
-        }
+        NSLayoutConstraint.activate([
+            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40),
+            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        //Ação para clicar nas bolinhas (opcional)
+        pageControl.addTarget(self, action: #selector(pageControlTapped(_:)), for: .valueChanged)
     }
     
-    @objc func pageControlValueChanged(_ sender: UIPageControl) {
-        page = sender.currentPage
-        updateContent()
+    //MARK: - Configura o titulo
+    func setupTitle() {
+        //Titulo da página
+        let labelTitle = UILabel()
+        labelTitle.text = String(localized: LocalizedStringResource(stringLiteral: "Onboarding.Title.Text"))
+        labelTitle.textAlignment = .center
+        labelTitle.textColor = UIColor(named: "Title")
+        labelTitle.font = UIFont(name: "DMSerifText-Regular", size: 38)
+        labelTitle.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(labelTitle)
+        
+        NSLayoutConstraint.activate([
+            labelTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            labelTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
+        ])
+        
     }
     
-    @objc func botaoClicado() {
-        //Aqui ponho as açoes que o botao vai ter
-        if page < onboardingPages.count - 1 {
+    //MARK: - Configura botão Próximo
+    func setupButton() {
+        updateButtonTitle(page: page)
+        botao.setTitleColor(UIColor(named: "TipsTextColor"), for: .normal)
+        botao.backgroundColor = UIColor(named: "ButtonBackground")
+        botao.layer.cornerRadius = 20
+        botao.layer.shadowColor = UIColor(named: "ButtonBackground")?.cgColor
+        botao.layer.shadowRadius = 4
+        botao.layer.shadowOpacity = 1
+        botao.layer.shadowOffset = CGSize(width: 2, height: 2)
+        
+        botao.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        botao.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(botao)
+        
+        NSLayoutConstraint.activate([
+            botao.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            botao.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -80),
+            botao.widthAnchor.constraint(equalToConstant: 290),
+            botao.heightAnchor.constraint(equalToConstant: 40)
+        ])
+    }
+    
+    //MARK: - Botão Próximo
+    @objc func nextButtonTapped() {
+        //Animação do botão
+        animateButton(botao)
+        
+        //Vibração
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        
+ 
+        if page < pages.count - 1 {
+            //Avança para próxima página
             page += 1
-            updateContent()
+            let nextVC = pages[page]
+            pageViewController.setViewControllers([nextVC], direction: .forward, animated: true, completion: nil)
+            pageControl.currentPage = page
+            updateButtonTitle(page: page)
         } else {
-            //navegar para outra tela a partir daqui
-            
-            //Pega a primeira cena conectada do app
+            //Mudar quando for subir 
+//            UserDefaults.standard.set(true, forKey: "hasSeenOnboarding")
+            //Chegou no final → navegar para ContentView
             if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-               //Dentro da cena, pega a primeira janela do app
                let window = scene.windows.first {
-                    //Define a nova tela raiz da janela como a ContentView dentro de um UIHostingController
-                    //Isso substitui o OnboardingViewController e faz a ContentView ser a tela principal
-                    window.rootViewController = UIHostingController(rootView: ContentView())
-                    
-                    //Garante que a janela fique visível e ativa na tela
-                    window.makeKeyAndVisible()
+
+                let contentView = UIHostingController(rootView: ContentView())
                 
-                    //TODO: Criar logica de aparecer onBoarding apenas uma vez
-                }
-           
+                contentView.view.frame = window.bounds.offsetBy(dx: window.bounds.width, dy: 0)
+                window.addSubview(contentView.view)
+                
+                UIView.animate(withDuration: 0.5, animations: {
+                    contentView.view.frame = window.bounds
+                    window.rootViewController?.view.frame = window.bounds.offsetBy(dx: -window.bounds.width, dy: 0)
+                }, completion: { _ in
+                    window.rootViewController = contentView
+                })
+            }
         }
-    }
-    
-    
-    @objc func skipButtonTapped() {
-        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           //Dentro da cena, pega a primeira janela do app
-           let window = scene.windows.first {
-                //Define a nova tela raiz da janela como a ContentView dentro de um UIHostingController
-                //Isso substitui o OnboardingViewController e faz a ContentView ser a tela principal
-                window.rootViewController = UIHostingController(rootView: ContentView())
                 
-                //Garante que a janela fique visível e ativa na tela
-                window.makeKeyAndVisible()
-            }
     }
     
-    @objc func didSwipe(_ gesture: UISwipeGestureRecognizer) {
-        if gesture.direction == .left {
-            print("Deslizou para a esquerda → Próxima página")
-            if page < onboardingPages.count - 1 {
-                page += 1
-                updateContent()
-            }
-        } else if gesture.direction == .right {
-            print("Deslizou para a direita ← Página anterior")
-            if page > 0 {
-                page -= 1
-                updateContent()
-            }
+    //MARK: - PageControl clicado (opcional)
+    @objc func pageControlTapped(_ sender: UIPageControl) {
+        let selectedPage = sender.currentPage
+        let direction: UIPageViewController.NavigationDirection = selectedPage > page ? .forward : .reverse
+        page = selectedPage
+        updateButtonTitle(page: page)
+        pageViewController.setViewControllers([pages[page]], direction: direction, animated: true, completion: nil)
+    }
+    
+    //MARK: - Animação do botão
+    fileprivate func animateButton(_ viewToAnimate: UIView){
+        UIView.animate(withDuration: 0, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
+        }) { (_) in
+            UIView.animate(withDuration: 0, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 2, options: .curveEaseInOut, animations: {
+                viewToAnimate.transform = CGAffineTransform.identity
+            }, completion: nil)
         }
     }
 }
 
+//MARK: - PageViewController DataSource e Delegate
+extension ViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    //Volta uma página
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let vc = viewController as? OnboardingPage else { return nil }
+        let previousIndex = vc.pageIndex - 1
+        return previousIndex >= 0 ? pages[previousIndex] : nil
+    }
+    
+    //Vai para próxima página
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let vc = viewController as? OnboardingPage else { return nil }
+        let nextIndex = vc.pageIndex + 1
+        return nextIndex < pages.count ? pages[nextIndex] : nil
+    }
+    
+    //Atualiza PageControl após swipe
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool,
+                            previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed, let currentVC = pageViewController.viewControllers?.first as? OnboardingPage {
+            page = currentVC.pageIndex
+            pageControl.currentPage = page
+            updateButtonTitle(page: page)
+            
+        }
+    }
+}
 
+//MARK: - Tela individual do Onboarding
+class OnboardingPage: UIViewController {
+    var pageIndex: Int = 0
+    var imageName: String = ""
+    var instructionText: String = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor(named: "Background")
+        
+        //Imagem central
+        let imageView = UIImageView(image: UIImage(systemName: imageName))
+        imageView.tintColor = .white
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        //Texto de instrução
+        let labelInstruction = UILabel()
+        labelInstruction.text = instructionText
+        labelInstruction.textAlignment = .center
+        labelInstruction.numberOfLines = 0
+        labelInstruction.textColor = .white
+        labelInstruction.font = UIFont(name: "MozillaHeadlineCondensed-ExtraLight", size: 24)
+        labelInstruction.translatesAutoresizingMaskIntoConstraints = false
+        
 
-
+        view.addSubview(imageView)
+        view.addSubview(labelInstruction)
+        
+        //Constraints
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40),
+            imageView.heightAnchor.constraint(equalToConstant: 136),
+            
+            labelInstruction.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            labelInstruction.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 40),
+            labelInstruction.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
+            labelInstruction.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24)
+        ])
+    }
+}

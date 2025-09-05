@@ -13,9 +13,6 @@
     "Assista a um anúncio para desbloquear essa categoria" : {
 
     },
-    "Bem-vindo" : {
-
-    },
     "Categorias" : {
 
     },
@@ -86,14 +83,14 @@
       "localizations" : {
         "base 2" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "O jogo deve ser jogado em grupo. Escolham se o mistério será guiado por um jogador ou pelo celular."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "teste1"
+            "value" : "The game must be played in groups. Decide whether the mystery will be guided by a player or by the phone."
           }
         },
         "pt-BR" : {
@@ -109,14 +106,14 @@
       "localizations" : {
         "base 2" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "O Mestre (jogador ou celular) revela a descrição inicial aos jogadores e guarda o restante do caso em segredo."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "teste2"
+            "value" : "The Master (player or phone) reveals the initial description to the players and keeps the rest of the case secret."
           }
         },
         "pt-BR" : {
@@ -132,14 +129,14 @@
       "localizations" : {
         "base 2" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "A cada rodada surgem novas pistas, mas sempre haverá uma falsa entre elas. Cuidado: nem tudo é o que parece."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "teste3"
+            "value" : "Each round brings new clues, but one of them will always be false. Beware: not everything is as it seems."
           }
         },
         "pt-BR" : {
@@ -155,14 +152,14 @@
       "localizations" : {
         "base 2" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "O desafio é descobrir o contexto correto do caso. Reflitam sobre as pistas e debatam suas interpretações."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "teste4"
+            "value" : "The challenge is to uncover the correct context of the case. Reflect on the clues and debate your interpretations.”"
           }
         },
         "pt-BR" : {
@@ -178,14 +175,14 @@
       "localizations" : {
         "base 2" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "O mistério termina quando o grupo chega a um consenso sobre a história final e a verdade é revelada"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "teste5"
+            "value" : "The mystery ends when the group reaches a consensus about the final story and the truth is revealed."
           }
         },
         "pt-BR" : {
@@ -201,14 +198,14 @@
       "localizations" : {
         "base 2" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Instruções de Jogo"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Titulo teste"
+            "value" : "Game Instructions"
           }
         },
         "pt-BR" : {
