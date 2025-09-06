@@ -1,54 +1,75 @@
 import SwiftUI
 
+// O Header customizado que criamos
+struct HeaderView: View {
+    @Environment(\.dismiss) var dismiss
+    let isFlipped: Bool
+    
+    var body: some View {
+        let title = isFlipped ? "Apenas para o mestre!" : "Para os jogadores!"
+        let icon = isFlipped ? "crown.fill" : "person.3.fill"
+        let backgroundColor = isFlipped ? Color(red: 1, green: 0.85, blue: 0.38) : Color(red: 0.34, green: 0.34, blue: 0.75)
+        let foregroundColor = isFlipped ? Color(hex: "#402887") : Color.white
+
+        ZStack {
+            backgroundColor
+                .frame(maxWidth: .infinity)
+                .frame(height: 56)
+            
+            HStack {
+                Button(action: { dismiss() }) {
+                    Image(systemName: "chevron.left")
+                        .font(.title2.weight(.bold))
+                }
+                .opacity(isFlipped ? 0 : 1)
+                .animation(.easeOut, value: isFlipped)
+                
+                Spacer()
+                
+                HStack(spacing: 12) {
+                    Image(systemName: icon)
+                        .font(.title2)
+                    Text(title)
+                        .font(.custom("Palatino-Bold", size: 22))
+                        .fontWeight(.bold)
+                }
+                
+                Spacer()
+                
+                Image(systemName: "chevron.left")
+                    .font(.title2.weight(.bold))
+                    .opacity(0)
+            }
+            .foregroundColor(foregroundColor)
+            .padding(.horizontal, 20)
+        }
+    }
+}
+
+// A View principal da tela de detalhes
 struct StoryDetailView: View {
     
     @StateObject private var viewModel = GameViewModel()
     let story: Story
     
     var body: some View {
-        ZStack {
-//           if let gameData = viewModel.gameData {
-                // Nova cor de fundo da tela
+        GeometryReader { geo in
+            ZStack {
                 ThemeColors.background.ignoresSafeArea()
                 
-                VStack(spacing: 0) { // O espaçamento é zero para controle manual com Spacers
-                    
-                    // --- NOVA BARRA DE NAVEGAÇÃO CUSTOMIZADA ---
-                    HStack {
-                        // Botão Voltar (ação vazia por enquanto)
-                        Button(action: { print("Botão Voltar pressionado") }) {
-                            Image(systemName: "chevron.left")
-                                .font(.title2.weight(.semibold))
-                                .foregroundColor(ThemeColors.textPrimary)
-                        }
-                        
-                        Spacer()
-                        
-                        // Botão de Grupo (ação vazia por enquanto)
-                        Button(action: { print("Botão Grupo pressionado") }) {
-                            Image(systemName: "person.3.fill")
-                                .font(.title2.weight(.semibold))
-                                .foregroundColor(ThemeColors.textPrimary)
-                        }
-                    }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-
-                    // Título principal da tela
-                    Text(viewModel.isFlipped ? "Apenas para o mestre!" : "Leia para todos os jogadores!")
-                        .font(.custom("Palatino-Bold", size: 32))
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .padding(.horizontal)
-                        .multilineTextAlignment(.center)
+                VStack(spacing: 0) {
+                    HeaderView(isFlipped: viewModel.isFlipped)
                     
                     Spacer()
+                        .frame(maxHeight: 40)
                     
-                    // --- CARD FLIPÁVEL ---
+                    let cardWidth = geo.size.width * 0.9
+                    let cardHeight = geo.size.height * 0.7
+                    
                     ZStack {
                         let storyDetail = story.storyDetail
                         
-                        CardFrontView(description: storyDetail.short)
+                        CardFrontView(description: storyDetail.short, width: cardWidth, height: cardHeight)
                             .opacity(viewModel.isFlipped ? 0 : 1)
                             .onTapGesture {
                                 withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
@@ -56,11 +77,10 @@ struct StoryDetailView: View {
                                 }
                             }
                         
-                        
-                        let fullStory = storyDetail.answer
-                        
                         CardBackView(
-                            fullStory: fullStory,
+                            fullStory: storyDetail.answer,
+                            width: cardWidth,
+                            height: cardHeight,
                             onFlip: {
                                 withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
                                     viewModel.flipCard()
@@ -70,6 +90,7 @@ struct StoryDetailView: View {
                         .rotation3DEffect(.degrees(180), axis: (x: 0.0, y: 1.0, z: 0.0))
                         .opacity(viewModel.isFlipped ? 1 : 0)
                     }
+                    .frame(width: cardWidth, height: cardHeight)
                     .rotation3DEffect(
                         .degrees(viewModel.isFlipped ? 180 : 0),
                         axis: (x: 0.0, y: 1.0, z: 0.0)
@@ -77,7 +98,6 @@ struct StoryDetailView: View {
                     
                     Spacer()
                     
-                    // --- NOVO BOTÃO "COMEÇAR" ---
                     if viewModel.isFlipped {
                         Button(action: {
                             print("Botão Começar pressionado!")
@@ -85,10 +105,10 @@ struct StoryDetailView: View {
                             Text("Começar")
                                 .font(.custom("Palatino-Bold", size: 22))
                                 .fontWeight(.bold)
-                                .foregroundColor(ThemeColors.buttonText) // Texto roxo escuro
-                                .padding(.vertical, 18)
+                                .foregroundColor(ThemeColors.buttonText)
+                                .padding(.vertical, 14) // Botão mais fino
                                 .frame(maxWidth: .infinity)
-                                .background(ThemeColors.buttonBackground) // Fundo dourado
+                                .background(ThemeColors.buttonBackground)
                                 .cornerRadius(20)
                                 .shadow(color: .black.opacity(0.4), radius: 5, x: 0, y: 4)
                         }
@@ -96,20 +116,34 @@ struct StoryDetailView: View {
                         .padding(.bottom, 20)
                         .transition(.opacity.animation(.easeIn(duration: 0.4)))
                     } else {
-                        // Espaço reservado para manter o layout consistente
                         Rectangle()
                             .fill(Color.clear)
-                            .frame(height: 80) // Altura aproximada do botão com padding
+                            .frame(height: 72) // Espaço reservado ajustado
                             .padding(.horizontal, 30)
                             .padding(.bottom, 20)
                     }
                 }
-//            }
-            
+            }
         }
+//        .ignoresSafeArea(edges: .top)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
-//#Preview {
-//    StoryDetailView()
-//}
+#Preview {
+    NavigationStack {
+        let mockStoryDetail = StoryDetail(
+            id: "2",
+            title: "História TESTE 2",
+            locked: false,
+            short: "Uma mulher que mora sozinha encontrou um bilhete estranho...",
+            answer: "A mulher sofre de uma doença neurológica..."
+        )
+        let mockStory = Story(
+            storyDetail: mockStoryDetail,
+            rounds: []
+        )
+        StoryDetailView(story: mockStory)
+    }
+}

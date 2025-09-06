@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Apenas para o mestre!" : {
-
-    },
     "Categorias" : {
       "localizations" : {
         "en" : {
@@ -29,7 +26,7 @@
     "História Completa" : {
 
     },
-    "Leia para todos os jogadores!" : {
+    "Histórias" : {
 
     },
     "Onboarding.Button.Text1" : {

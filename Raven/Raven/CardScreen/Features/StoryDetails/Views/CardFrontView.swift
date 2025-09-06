@@ -2,7 +2,8 @@ import SwiftUI
 
 struct CardFrontView: View {
     let description: String
-
+    let width: CGFloat
+    let height: CGFloat
     var body: some View {
         VStack(spacing: 0) { // Espaçamento zerado para controle manual
             
@@ -37,13 +38,14 @@ struct CardFrontView: View {
             Spacer() // Dois spacers para dar mais peso à parte de baixo
 
             Text("Vire a carta para ver a história completa")
-                .font(.custom("Palatino-Bold", size: 16))
+                .font(.custom("Palatino-Bold", size: 15))
                 .foregroundColor(ThemeColors.instructionYellow) // 5. Amarelo da instrução
                 .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
+                .multilineTextAlignment(.center)
         }
         .padding(.vertical, 35) // Ajuste fino do padding vertical
         .padding(.horizontal, 30)
-        .frame(width: 340, height: 500)
+        .frame(width: width, height: height)
         .background(ThemeColors.cardBackground)
         .cornerRadius(20)
         .modifier(BevelEffect()) // 3. Aplicando o novo efeito de relevo
@@ -53,8 +55,7 @@ struct CardFrontView: View {
 
 #Preview {
     ZStack {
-        // 1. Usando a nova cor de fundo no preview
         ThemeColors.background.ignoresSafeArea()
-        CardFrontView(description: "Um cozinheiro adiciona um último ingrediente à sua panela e, por causa desse simples ato, perde a casa onde mora.")
+        CardFrontView(description: "Um cozinheiro adiciona um último ingrediente à sua panela...", width: 340, height: 500)
     }
 }

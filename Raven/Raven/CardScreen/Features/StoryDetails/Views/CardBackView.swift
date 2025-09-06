@@ -2,6 +2,8 @@ import SwiftUI
 
 struct CardBackView: View {
     let fullStory: String
+    let width: CGFloat
+    let height: CGFloat
     var onFlip: () -> Void
     
     
@@ -23,7 +25,7 @@ struct CardBackView: View {
         }
         // Aplico o mesmo estilo de card da frente para manter a consistência.
         .padding(30)
-        .frame(width: 340, height: 500)
+        .frame(width: width, height: height)
         .background(ThemeColors.cardBackground) // Fundo roxo claro
         .cornerRadius(20)
         // Borda sutil e sombra para o card.
@@ -61,6 +63,7 @@ struct CardBackView: View {
                 .font(.custom("Palatino-Bold", size: 40)) // Nova fonte e tamanho
                 .fontWeight(.bold)
                 .foregroundColor(ThemeColors.textPrimary)
+                .multilineTextAlignment(.center)
                 .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 2)
                 .padding(.bottom, 10)
 
@@ -77,14 +80,14 @@ struct CardBackView: View {
             // O `showWarning` ainda pode ser usado se houver necessidade de algum feedback pós-raspagem.
         }
         .padding(30)
-        .frame(width: 340, height: 500)
+        .frame(width: width, height: height)
         .background(ThemeColors.cardBackground)
         .cornerRadius(20)
     }
 }
 
 #Preview {
-    CardBackView(fullStory: "Um homem finalista de um reality show de culinária perdeu o prêmio de centenas de reais...", onFlip: {})
+    CardBackView(fullStory: "Um homem finalista de um reality show de culinária perdeu o prêmio de centenas de reais...",width: 300,height: 400, onFlip: {})
         .padding()
         .background(ThemeColors.background)
 }

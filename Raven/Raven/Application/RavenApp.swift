@@ -17,7 +17,7 @@ struct RavenApp: App {
             if hasSeenOnboarding {
                 ContentView()
             } else {
-                OnboardingView()
+                HistoriesView()
             }
             
         }
