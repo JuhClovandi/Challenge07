@@ -100,36 +100,6 @@
         }
       }
     },
-    "Aqui vai o conteúdo completo da história..." : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aqui vai o conteúdo completo da história..."
-          }
-        }
-      }
-    },
-    "Aqui você pode explicar como o jogo funciona, quais são as regras, e dar dicas para os jogadores." : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aqui você pode explicar como o jogo funciona, quais são as regras, e dar dicas para os jogadores."
-          }
-        }
-      }
-    },
-    "Assista a um anúncio para desbloquear essa categoria" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Assista a um anúncio para desbloquear essa categoria"
-          }
-        }
-      }
-    },
     "Avançar para a próxima rodada" : {
       "localizations" : {
         "en" : {
@@ -142,16 +112,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avançar para a próxima rodada"
-          }
-        }
-      }
-    },
-    "Bem-vindo" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Bem-vindo"
           }
         }
       }
@@ -252,26 +212,6 @@
         }
       }
     },
-    "Essa história está bloqueada." : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Essa história está bloqueada."
-          }
-        }
-      }
-    },
-    "Fechar" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Fechar"
-          }
-        }
-      }
-    },
     "Fim das rodadas!" : {
       "localizations" : {
         "en" : {
@@ -304,22 +244,6 @@
         }
       }
     },
-    "História" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Story"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "História"
-          }
-        }
-      }
-    },
     "História Completa" : {
       "localizations" : {
         "en" : {
@@ -348,54 +272,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "História Final"
-          }
-        }
-      }
-    },
-    "Histórias" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stories"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Histórias"
-          }
-        }
-      }
-    },
-    "Instruções" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Instructions"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Instruções"
-          }
-        }
-      }
-    },
-    "Instruções do Jogo" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Game Instructions"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Instruções do Jogo"
           }
         }
       }
