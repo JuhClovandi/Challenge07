@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8263B4E82E6B7B6100A1B90C /* Exceptions for "Raven" folder in "Raven" target */ = {
+		E7BC28232E68D50C00D0A21B /* Exceptions for "Raven" folder in "Raven" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +43,7 @@
 		8298E50A2E53AE5A00B0A107 /* Raven */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8263B4E82E6B7B6100A1B90C /* Exceptions for "Raven" folder in "Raven" target */,
+				E7BC28232E68D50C00D0A21B /* Exceptions for "Raven" folder in "Raven" target */,
 			);
 			path = Raven;
 			sourceTree = "<group>";
@@ -207,7 +207,6 @@
 				Base,
 				"Base 2",
 				"pt-BR",
-				"base 2",
 				"es-419 2",
 				"es-419",
 				"en 2",
