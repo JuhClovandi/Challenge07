@@ -10,14 +10,22 @@ import SwiftUI
 @main
 struct RavenApp: App {
     var body: some Scene {
+        
         WindowGroup {
+<<<<<<< HEAD
             
+=======
+>>>>>>> cardscreen
             let hasSeenOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding")
             
             if hasSeenOnboarding {
                 ContentView()
             } else {
+<<<<<<< HEAD
                 OnboardingView()
+=======
+                HistoriesView()
+>>>>>>> cardscreen
             }
             
         }

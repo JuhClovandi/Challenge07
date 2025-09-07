@@ -1,6 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+<<<<<<< HEAD
     "%lld" : {
 
     },
@@ -132,6 +133,8 @@
         }
       }
     },
+=======
+>>>>>>> cardscreen
     "Categorias" : {
       "localizations" : {
         "en" : {
@@ -180,6 +183,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "Dicas" : {
       "localizations" : {
         "en" : {
@@ -244,6 +248,8 @@
         }
       }
     },
+=======
+>>>>>>> cardscreen
     "História Completa" : {
       "localizations" : {
         "en" : {
@@ -260,6 +266,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "História Final" : {
       "localizations" : {
         "en" : {
@@ -307,6 +314,10 @@
           }
         }
       }
+=======
+    "Histórias" : {
+
+>>>>>>> cardscreen
     },
     "Onboarding.Button.Text1" : {
       "localizations" : {
