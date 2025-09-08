@@ -37,7 +37,7 @@ struct ConfirmationView: View {
                 .shadow(color: .trueTips, radius: 2, x: -2, y: -2)
 
                 // MARK: TROCAR CONTENTVIEW PELA TELA DE HISTORIAS
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: CategoryView()) {
                     Text("Sair da história")
                         .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 15, relativeTo: .body))
                         .foregroundColor(.black)

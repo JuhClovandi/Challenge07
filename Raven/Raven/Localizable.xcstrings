@@ -1,133 +1,371 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "%lld": {
-      "localizations": {}
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld" : {
+
     },
-    "A descrição pode ser lida quantas vezes for necessário.": {
-      "localizations": {
-        "en": {
-          "stringUnit": { "state": "translated", "value": "The description can be read as many times as necessary." }
+    "A descrição pode ser lida quantas vezes for necessário." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The description can be read as many times as necessary."
+          }
         },
-        "pt-BR": {
-          "stringUnit": { "state": "translated", "value": "A descrição pode ser lida quantas vezes for necessário." }
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A descrição pode ser lida quantas vezes for necessário."
+          }
         }
       }
     },
-    "a história.": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "the story." } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "a história." } }
+    "a história." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "the story."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "a história."
+          }
+        }
       }
     },
-    "Antes de prosseguir, confirme se todos os jogadores desejam finalizar ": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Before proceeding, please confirm that all players wish to complete " } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Antes de prosseguir, confirme se todos os jogadores desejam finalizar " } }
+    "Antes de prosseguir, confirme se todos os jogadores desejam finalizar " : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Before proceeding, please confirm that all players wish to complete "
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antes de prosseguir, confirme se todos os jogadores desejam finalizar "
+          }
+        }
       }
     },
-    "Antes de prosseguir, confirme se todos os jogadores desejam ir para a próxima rodada.": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Before proceeding, please confirm that all players wish to proceed to the next round." } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Antes de prosseguir, confirme se todos os jogadores desejam ir para a próxima rodada." } }
+    "Antes de prosseguir, confirme se todos os jogadores desejam ir para a próxima rodada." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Before proceeding, please confirm that all players wish to proceed to the next round."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antes de prosseguir, confirme se todos os jogadores desejam ir para a próxima rodada."
+          }
+        }
       }
     },
-    "Ao avançar não será possível retornar para a rodada anterior.": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Once you advance, you will not be able to return to the previous round." } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Ao avançar não será possível retornar para a rodada anterior." } }
+    "Ao avançar não será possível retornar para a rodada anterior." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Once you advance, you will not be able to return to the previous round."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ao avançar não será possível retornar para a rodada anterior."
+          }
+        }
       }
     },
-    "Apenas para o mestre!": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Only for the master!" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Apenas para o mestre!" } }
+    "Apenas para o mestre!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only for the master!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apenas para o mestre!"
+          }
+        }
       }
     },
-    "Avançar para a próxima rodada": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Advance to the next round" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Avançar para a próxima rodada" } }
+    "Avançar para a próxima rodada" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Advance to the next round"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avançar para a próxima rodada"
+          }
+        }
       }
     },
-    "Cancelar": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Cancel" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Cancelar" } }
+    "Cancelar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
       }
     },
-    "Categorias": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Categories" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Categorias" } }
+    "Categorias" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categories"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categorias"
+          }
+        }
       }
     },
-    "Começar": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Start" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Começar" } }
+    "Começar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Começar"
+          }
+        }
       }
     },
-    "Descrição": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Description" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Descrição" } }
+    "Descrição" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descrição"
+          }
+        }
       }
     },
-    "Dicas": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Tips" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Dicas" } }
+    "Dicas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dicas"
+          }
+        }
       }
     },
-    "Dicas Falsas": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "False Tips" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Dicas Falsas" } }
+    "Dicas Falsas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "False Tips"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dicas Falsas"
+          }
+        }
       }
     },
-    "Fim das rodadas!": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "End of rounds!" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Fim das rodadas!" } }
+    "Fim das rodadas!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "End of rounds!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fim das rodadas!"
+          }
+        }
       }
     },
-    "Finalizar História": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Finish Story" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Finalizar História" } }
+    "Finalizar História" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Story"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finalizar História"
+          }
+        }
       }
     },
-    "História Completa": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Full Story" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "História Completa" } }
+    "História Completa" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Story"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "História Completa"
+          }
+        }
       }
     },
-    "História Final": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Final Story" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "História Final" } }
+    "História Final" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final Story"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "História Final"
+          }
+        }
       }
     },
-    "Leia para todos os jogadores!": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Read for all players!" } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Leia para todos os jogadores!" } }
+    "Histórias" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Histories"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Histórias"
+          }
+        }
       }
     },
-    "Não revele qual delas está fora de contexto.": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "translated", "value": "Don't reveal which one is out of context." } },
-        "pt-BR": { "stringUnit": { "state": "translated", "value": "Não revele qual delas está fora de contexto." } }
+    "Leia para todos os jogadores!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read for all players!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leia para todos os jogadores!"
+          }
+        }
       }
     },
-    "Histórias": {
-      "localizations": {
-        "en": { "stringUnit": { "state": "needs_review", "value": "Histories" } },
-        "pt-BR": { "stringUnit": { "state": "needs_review", "value": "Histórias" } }
+    "Não revele qual delas está fora de contexto." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't reveal which one is out of context."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não revele qual delas está fora de contexto."
+          }
+        }
       }
+    },
+    "Onboarding.Button.Text1" : {
+
+    },
+    "Onboarding.Button.Text2" : {
+
+    },
+    "Onboarding.Title.Text" : {
+
+    },
+    "Próxima rodada" : {
+
+    },
+    "RASPE PARA REVELAR" : {
+
+    },
+    "Revelar Mistério" : {
+
+    },
+    "Rodada %lld/%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rodada %1$lld/%2$lld"
+          }
+        }
+      }
+    },
+    "Sair da história" : {
+
+    },
+    "sair da história?" : {
+
+    },
+    "Tem certeza de que quer " : {
+
+    },
+    "Vire a carta para ver a história completa" : {
+
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

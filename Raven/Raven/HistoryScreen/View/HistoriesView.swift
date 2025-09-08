@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HistoriesView: View {
     @EnvironmentObject var appState: AppState
-    @StateObject private var viewModel = HistoriesViewModel()
+    let stories: [Story]
     
     private let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 20),
@@ -38,7 +38,7 @@ struct HistoriesView: View {
                     // --- Grade de Histórias ---
                     ScrollView {
                         LazyVGrid(columns: columns, spacing: 20) {
-                            ForEach(viewModel.stories, id: \.storyDetail.id) { story in
+                            ForEach(stories, id: \.storyDetail.id) { story in
                                 NavigationLink(destination: StoryDetailView(story: story)) {
                                     HistoryCardView(story: story)
                                 }
@@ -56,6 +56,6 @@ struct HistoriesView: View {
 
 // Preview para o Xcode
 #Preview {
-    HistoriesView()
+    HistoriesView(stories: GameViewModel().gameData?.stories ?? [])
         .environmentObject(AppState())
 }

@@ -16,11 +16,9 @@ struct RavenApp: App {
             let hasSeenOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding")
             
             if hasSeenOnboarding {
-                ContentView()
+                CategoryView()
             } else {
-
                 OnboardingView()
-
             }
             
         }

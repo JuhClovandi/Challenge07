@@ -99,9 +99,7 @@ struct StoryDetailView: View {
                     Spacer()
                     
                     if viewModel.isFlipped {
-                        Button(action: {
-                            print("Botão Começar pressionado!")
-                        }) {
+                        NavigationLink(destination: RoundsView(story: story)) {
                             Text("Começar")
                                 .font(.custom("Palatino-Bold", size: 22))
                                 .fontWeight(.bold)

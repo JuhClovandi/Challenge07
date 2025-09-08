@@ -1,3 +1,10 @@
+//
+//  CategoryView.swift
+//  Raven
+//
+//  Created by Kenay on 25/08/25.
+//
+
 import SwiftUI
 
 struct CategoryView: View {
@@ -44,21 +51,29 @@ struct CategoryView: View {
                             
                             // Cards
                             if let gameData = viewModel.gameData {
-                                CategoryCardView(
-                                    categoryName: gameData.category
-                                )
+                                NavigationLink(destination: HistoriesView(stories: gameData.stories)) {
+                                    CategoryCardView(
+                                        categoryName: gameData.category
+                                    )
+                                }
                                 .padding(.horizontal)
                             }
                             
-                            CategoryCardView(
-                                categoryName: "Halloween"
-                            )
-                            .padding(.horizontal)
+                            // Exemplo com outra categoria, se houver
+                            if let gameData = viewModel.gameData {
+                                NavigationLink(destination: HistoriesView(stories: gameData.stories)) {
+                                    CategoryCardView(
+                                        categoryName: "Halloween"
+                                    )
+                                }
+                                .padding(.horizontal)
+                            }
                         }
                     }
                     .background(backgroundColor)
                     .scrollContentBackground(.hidden)
                 }
+                .navigationBarBackButtonHidden(true)
                 .transition(.move(edge: .trailing)) // animação de saída
                 .animation(.easeInOut, value: goToOnboarding)
             }

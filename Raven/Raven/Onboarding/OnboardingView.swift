@@ -17,6 +17,7 @@ struct OnboardingView: View {
                 
         }
         .ignoresSafeArea(.all)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

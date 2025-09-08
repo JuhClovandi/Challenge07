@@ -182,7 +182,7 @@ class ViewController: UIViewController {
             if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                let window = scene.windows.first {
 
-                let contentView = UIHostingController(rootView: ContentView())
+                let contentView = UIHostingController(rootView: CategoryView())
                 
                 contentView.view.frame = window.bounds.offsetBy(dx: window.bounds.width, dy: 0)
                 window.addSubview(contentView.view)
