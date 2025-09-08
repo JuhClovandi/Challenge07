@@ -4,7 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>MozillaHeadline_Condensed-Bold.ttf</string>
+		<string>MozillaHeadline_Condensed-Medium.ttf</string>
 		<string>MozillaHeadline_Condensed-ExtraLight.ttf</string>
+		<string>Asap_Condensed-Regular.ttf</string>
+		<string>Asap_Condensed-Bold.ttf</string>
 		<string>DMSerifText-Regular.ttf</string>
 	</array>
 </dict>

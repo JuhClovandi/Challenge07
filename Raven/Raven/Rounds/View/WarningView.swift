@@ -29,7 +29,7 @@ struct WarningView: View {
                 VStack(alignment: .center) {
                     if !roundsComplete {
                         Text("Antes de prosseguir, confirme se todos os jogadores desejam ir para a próxima rodada.")
-                            .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 16, relativeTo: .title3))
+                            .font(.custom("AsapCondensed-Regular", size: 16, relativeTo: .title3))
                             .foregroundStyle(.white)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 12)
@@ -37,7 +37,7 @@ struct WarningView: View {
                             .padding(.top, 16)
                         
                         Text("Ao avançar não será possível retornar para a rodada anterior.")
-                            .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 16, relativeTo: .title3))
+                            .font(.custom("AsapCondensed-Bold", size: 16, relativeTo: .title3))
                             .foregroundStyle(.white)
                             .bold()
                             .multilineTextAlignment(.center)
@@ -49,7 +49,7 @@ struct WarningView: View {
                             Text("Antes de prosseguir, confirme se todos os jogadores desejam finalizar ")
                             + Text("a história.").fontWeight(.bold)
                         )
-                        .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 16, relativeTo: .title3))
+                        .font(.custom("MozillaHeadlineCondensed-Medium", size: 16, relativeTo: .title3))
                         .foregroundStyle(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 12)
@@ -75,7 +75,7 @@ struct WarningView: View {
                     
                 }, label: {
                     Text(roundsComplete ? "Revelar Mistério" : "Avançar para a próxima rodada")
-                        .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 15, relativeTo: .body))
+                        .font(.custom("MozillaHeadlineCondensed-Medium", size: 15, relativeTo: .body))
                         .foregroundColor(.black)
                         .padding(.horizontal, 4)
                         .padding(.vertical, 10)
@@ -98,7 +98,7 @@ struct WarningView: View {
                     dismiss()
                 }, label: {
                     Text("Cancelar")
-                        .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 15, relativeTo: .body))
+                        .font(.custom("MozillaHeadlineCondensed-Medium", size: 15, relativeTo: .body))
                         .foregroundColor(.black)
                         .padding(.horizontal, 4)
                         .padding(.vertical, 10)

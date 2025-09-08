@@ -28,7 +28,7 @@ struct FinalHistory: View {
                         
                         VStack(spacing: 30) {
                             Text(story.storyDetail.answer)
-                                .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 20, relativeTo: .title2))
+                                .font(.custom("AsapCondensed-Regular", size: 20, relativeTo: .title2))
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .fixedSize(horizontal: false, vertical: true)
@@ -60,7 +60,7 @@ struct FinalHistory: View {
                                             Text(tip.text)
                                                 .lineLimit(nil)
                                                 .fixedSize(horizontal: false, vertical: true)
-                                                .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 16, relativeTo: .title3))
+                                                .font(.custom("AsapCondensed-Regular", size: 16, relativeTo: .title3))
                                                 .foregroundColor(.tipsText)
                                                 .fontWeight(.bold)
                                                 .multilineTextAlignment(.leading)
@@ -75,7 +75,7 @@ struct FinalHistory: View {
                             }
                             NavigationLink(destination: CategoryView()) {
                                 Text("Finalizar História")
-                                    .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 15, relativeTo: .body))
+                                    .font(.custom("MozillaHeadlineCondensed-Medium", size: 15, relativeTo: .body))
                                 // mudar fonte
                                     .foregroundColor(.black)
                                     .padding()

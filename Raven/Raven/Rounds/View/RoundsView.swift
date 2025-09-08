@@ -44,13 +44,13 @@ struct RoundsView: View {
                                 .foregroundColor(.title)
                             
                             Text(story.storyDetail.short)
-                                .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 20, relativeTo: .title2))
+                                .font(.custom("AsapCondensed-Regular", size: 20, relativeTo: .title2))
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .fixedSize(horizontal: false, vertical: true)
                             
                             Text("A descrição pode ser lida quantas vezes for necessário.")
-                                .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 13, relativeTo: .callout))
+                                .font(.custom("DroidSans", size: 13, relativeTo: .callout))
                                 .foregroundColor(.tipsWarning)
                                 .multilineTextAlignment(.center)
                         }
@@ -65,7 +65,7 @@ struct RoundsView: View {
                                 .foregroundColor(.title)
                             
                             Text("Não revele qual delas está fora de contexto.")
-                                .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 13, relativeTo: .callout))
+                                .font(.custom("DroidSans", size: 13, relativeTo: .callout))
                                 .foregroundColor(.tipsWarning)
                                 .padding(.bottom, 16)
                             
@@ -86,7 +86,7 @@ struct RoundsView: View {
                                     Text(tip.text)
                                         .lineLimit(nil)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 16, relativeTo: .title3))
+                                        .font(.custom("AsapCondensed-Regular", size: 16, relativeTo: .title3))
                                         .foregroundColor(.tipsText)
                                         .fontWeight(
                                             tip.type ? .regular : .bold
@@ -102,8 +102,7 @@ struct RoundsView: View {
                         
                         NavigationLink(destination: WarningView(story: story, currentlyRound: $currentlyRound)) {
                             Text(currentlyRound < story.rounds.count - 1 ? "Próxima rodada" : "Revelar Mistério")
-                                .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 15, relativeTo: .body))
-                            // mudar fonte
+                                .font(.custom("MozillaHeadlineCondensed-Medium", size: 15, relativeTo: .body))
                                 .foregroundColor(.black)
                                 .padding()
                                 .frame(maxWidth: .infinity)

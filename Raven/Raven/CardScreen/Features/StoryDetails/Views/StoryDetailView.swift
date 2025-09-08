@@ -101,7 +101,7 @@ struct StoryDetailView: View {
                     if viewModel.isFlipped {
                         NavigationLink(destination: RoundsView(story: story)) {
                             Text("Começar")
-                                .font(.custom("Palatino-Bold", size: 22))
+                                .font(.custom("MozillaHeadlineCondensed-Medium", size: 22))
                                 .fontWeight(.bold)
                                 .foregroundColor(ThemeColors.buttonText)
                                 .padding(.vertical, 14) // Botão mais fino

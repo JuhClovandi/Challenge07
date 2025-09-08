@@ -4,37 +4,37 @@
         {
             "story": {
                 "id": "1",
-                "title": "TEST STORY 1",
+                "title": "Man with the Envelope",
                 "locked": false,
                 "short": "A man rushes through the door holding an envelope, but stops when he hears a sound and freezes.",
-                "answer": "The man entered the hospital with the results of a test that could save his sister's life. When he approached her room, he heard the monitor turn off and realized she had just passed away."
+                "answer": "The man entered the hospital with the results of a test that could save his sister's life. As he approached her room, he heard the sound of the monitor shutting off and realized she had just passed away."
             },
             "rounds": [
                 {
                     "round": 1,
                     "tips": [
-                        { "text": "He entered the place alone.", "type": true },
-                        { "text": "The room had a characteristic smell of cleaning.", "type": true },
-                        { "text": "He saw someone leave the room moments before the sound.", "type": false },
-                        { "text": "The envelope contained an important document.", "type": true }
+                        {"text": "He entered the place alone.", "type": true},
+                        {"text": "The room had a characteristic smell of cleanliness.", "type": true},
+                        {"text": "He saw someone leave the room moments before the sound.", "type": false},
+                        {"text": "The envelope contained an important document.", "type": true}
                     ]
                 },
                 {
                     "round": 2,
                     "tips": [
-                        { "text": "He received a call before hearing the sound.", "type": false },
-                        { "text": "The envelope's contents could save someone.", "type": true },
-                        { "text": "The sound indicated a change.", "type": true },
-                        { "text": "The environment was divided into wings.", "type": true }
+                        {"text": "He received a call before hearing the sound.", "type": false},
+                        {"text": "The envelope's content could save someone.", "type": true},
+                        {"text": "The sound indicated a change.", "type": true},
+                        {"text": "The building was divided into wings.", "type": true}
                     ]
                 },
                 {
                     "round": 3,
                     "tips": [
-                        { "text": "The sound indicated that a person was lifeless.", "type": true },
-                        { "text": "A family member's name was on the envelope.", "type": true },
-                        { "text": "He heard footsteps behind him but didn't turn around.", "type": false },
-                        { "text": "A beeping sound seemed to monitor something important.", "type": true }
+                        {"text": "The sound indicated that a person was dead.", "type": true},
+                        {"text": "A family member's name was on the envelope.", "type": true},
+                        {"text": "He heard footsteps behind him but did not turn.", "type": false},
+                        {"text": "A beeping sound seemed to monitor something important.", "type": true}
                     ]
                 }
             ]
@@ -42,41 +42,420 @@
         {
             "story": {
                 "id": "2",
-                "title": "TEST STORY 2",
+                "title": "Woman and the Note",
                 "locked": false,
-                "short": "A woman living alone found a strange note in her apartment: 'Trust no one inside the house.'",
-                "answer": "The woman suffers from a neurological condition that causes hallucinations and temporary memory loss. She wrote the note to alert herself, as her hallucination made her believe someone else was with her, even though she lived alone. The sense of presence and the note are manifestations of her condition."
+                "short": "A woman who lives alone found a strange note in her apartment: 'Trust no one inside the house.'",
+                "answer": "The woman suffers from a neurological disorder that causes hallucinations and temporary memory loss. She wrote the note herself to warn herself, as her hallucination made her believe there was someone else with her, even though she lived alone. The sense of presence and the note are manifestations of her condition."
             },
             "rounds": [
                 {
                     "round": 1,
                     "tips": [
-                        { "text": "She hadn't left the apartment before finding the note.", "type": true },
-                        { "text": "There was a faint smell in the air she couldn't identify but seemed familiar.", "type": false },
-                        { "text": "The note was in a visible spot for her as soon as she woke up.", "type": true },
-                        { "text": "No misplaced objects caught her attention.", "type": true }
+                        {"text": "She had not left the apartment before finding the note.", "type": true},
+                        {"text": "There was a faint smell in the air she could not identify, but it seemed familiar.", "type": false},
+                        {"text": "The note was in a visible place as soon as she woke up.", "type": true},
+                        {"text": "No object out of place caught her attention.", "type": true}
                     ]
                 },
                 {
                     "round": 2,
                     "tips": [
-                        { "text": "The handwriting on the note was not unfamiliar to her.", "type": true },
-                        { "text": "The woman felt as if someone was there with her.", "type": true },
-                        { "text": "Sometimes she forgot whether she had locked the door or not.", "type": true },
-                        { "text": "Furniture seemed to have been subtly moved.", "type": false }
+                        {"text": "The handwriting on the note was not unfamiliar to her.", "type": true},
+                        {"text": "The woman felt that someone was there with her.", "type": true},
+                        {"text": "Sometimes she forgot if she had locked the door or not.", "type": true},
+                        {"text": "Furniture seemed to have been subtly moved.", "type": false}
                     ]
                 },
                 {
                     "round": 3,
                     "tips": [
-                        { "text": "The woman frequently talked to herself.", "type": true },
-                        { "text": "The apartment door had been locked since the previous night.", "type": true },
-                        { "text": "The woman saw dirt tracks at the entrance of the house.", "type": false },
-                        { "text": "She had found similar notes before, as if from someone very close.", "type": true }
+                        {"text": "The woman frequently talked to herself.", "type": true},
+                        {"text": "The apartment door had been locked since the previous night.", "type": true},
+                        {"text": "The woman saw dirt tracks at the entrance.", "type": false},
+                        {"text": "She had found similar notes before, as if from someone very close.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "3",
+                "title": "Diary in the Old House",
+                "locked": false,
+                "short": "In an old house, a woman finds a diary with torn pages and decides to call the police.",
+                "answer": "The diary contained the location of a hidden room in the house. Following it, the woman found human bones hidden there. She knew the diary belonged to the former owner as his name was on the cover, and she decided to report it to the police."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "She lived alone in this house.", "type": true},
+                        {"text": "There was dust where the diary was found.", "type": true},
+                        {"text": "The house seemed to hold many secrets.", "type": true},
+                        {"text": "The diary belonged to someone close to her.", "type": false}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "The author seemed to be in love.", "type": false},
+                        {"text": "The diary contained detailed notes about the house.", "type": true},
+                        {"text": "There was a familiar name on the cover.", "type": true},
+                        {"text": "The secret belonged to someone who lived there before.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "The previous owner moved far away after selling.", "type": true},
+                        {"text": "The author described secret meetings with a family member.", "type": false},
+                        {"text": "What she found in the hidden place belonged to a human being.", "type": true},
+                        {"text": "She had not explored the entire house.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "4",
+                "title": "Luke, the Missing Dog",
+                "locked": false,
+                "short": "Ana received a box with no sender. Inside was an old key and a note: 'He is not where you think.' The next day, her dog Luke disappeared from the yard.",
+                "answer": "The key was for the city's old kennel. Ana's family, whom she thought was traveling, had taken the dog. They used the disappearance as a pretext to lead her to the location, where she was actually awaited with a surprise birthday party."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "The dog was old and not used to running away.", "type": true},
+                        {"text": "The handwriting on the note was vaguely familiar.", "type": true},
+                        {"text": "A neighbor heard desperate barking during the night.", "type": false},
+                        {"text": "The box was left at the door with no postal seal.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "The yard gate was closed with no signs of forced entry.", "type": true},
+                        {"text": "Ana's birthday was approaching.", "type": true},
+                        {"text": "Ana received a call from an unknown number, but no one spoke.", "type": false},
+                        {"text": "The key had a number engraved on it.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "Her family was known for making surprises.", "type": true},
+                        {"text": "Luke was a gentle dog and would go easily with someone familiar.", "type": true},
+                        {"text": "The dog was an expensive breed.", "type": false},
+                        {"text": "The key did not open any door in Ana's house.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "5",
+                "title": "Antônio Carlos and Maria Isabela",
+                "locked": false,
+                "short": "Antônio Carlos and Maria Isabela were found dead on the floor. There were glass shards and water nearby.",
+                "answer": "Antônio Carlos and Maria Isabela were the names of two goldfish pets. Their round glass aquarium fell from a shelf, broke on the floor, and they died from lack of water."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "The cause of death was asphyxiation.", "type": true},
+                        {"text": "There was no crime or poison involved.", "type": true},
+                        {"text": "A window was found open, suggesting strong wind knocked something over.", "type": false},
+                        {"text": "The bodies did not take up much space on the floor.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Antônio Carlos and Maria Isabela lived together in the same house.", "type": true},
+                        {"text": "They were not human.", "type": true},
+                        {"text": "They were the names of two famous actors who rehearsed a play and had an accident.", "type": false},
+                        {"text": "They were unable to walk or speak.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "A scared cat could have caused the incident.", "type": true},
+                        {"text": "The broken glass was part of their house.", "type": true},
+                        {"text": "If they had stayed in water, they would have been alive.", "type": true},
+                        {"text": "They were part of a suicide pact.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "6",
+                "title": "The Silent Car",
+                "locked": false,
+                "short": "A man stops his car in a completely deserted location, gets out, and minutes later dies. He was completely alone.",
+                "answer": "The man was an astronaut on a mission on the Moon. The 'car' was actually a lunar rover. He stopped the vehicle in a deserted area of the lunar surface to collect samples. Upon exiting, his spacesuit suffered a small puncture, causing rapid and fatal depressurization."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "He died due to a work accident.", "type": true},
+                        {"text": "At the place of death, sunlight never reaches.", "type": false},
+                        {"text": "The cause of death was lack of air.", "type": true},
+                        {"text": "He was very far from his real home.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Any movement caused small tremors at the site.", "type": false},
+                        {"text": "The vehicle he drove was electric and well designed for the location.", "type": true},
+                        {"text": "He could not survive more than a minute outside the car.", "type": true},
+                        {"text": "At the place of death, there is no sound and no wind.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "The equipment he wore was vital for survival.", "type": true},
+                        {"text": "A failure in his 'suit' caused his death.", "type": true},
+                        {"text": "From the place of death, the sky is always black and starry.", "type": true},
+                        {"text": "The surrounding structure seemed under constant pressure.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "7",
+                "title": "The Bankrupt Hotel",
+                "locked": false,
+                "short": "A man pushed his car, stopped at a hotel, and lost all his fortune.",
+                "answer": "The man was playing Monopoly. His piece was the car. He 'pushed' it when rolling the dice, and bad luck made him land on a hotel owned by another player. The rent he had to pay bankrupted him in the game."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "There were other people with him, and one benefited from his loss.", "type": true},
+                        {"text": "Unexpected problems appeared during his stay.", "type": false},
+                        {"text": "The hotel belonged to a friend.", "type": true},
+                        {"text": "Luck was a key factor in what happened.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "He liked games involving money.", "type": true},
+                        {"text": "The hotel was smaller than he expected.", "type": true},
+                        {"text": "An impulsive decision completely changed his destiny.", "type": false},
+                        {"text": "He was forced to stop at that place.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "The money he lost had no value outside that place.", "type": true},
+                        {"text": "All action happened in a limited space.", "type": true},
+                        {"text": "His car piece fits in the palm of your hand.", "type": true},
+                        {"text": "A tiny mistake cost him dearly.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "8",
+                "title": "The Diver",
+                "locked": false,
+                "short": "A man in full diving gear is found dead in the middle of a burned forest.",
+                "answer": "He was diving in a lake when a firefighting helicopter scooped up water (and him) to dump over the fire. Due to the height, he did not survive the impact."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "He did not die from burning or drowning.", "type": true},
+                        {"text": "He arrived at the forest from above.", "type": true},
+                        {"text": "He was fleeing from something dangerous.", "type": false},
+                        {"text": "His death was a complete accident.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Water was involved in his transport, but not in his death.", "type": true},
+                        {"text": "A large-scale fire was happening.", "type": true},
+                        {"text": "His oxygen tank appeared scratched.", "type": false},
+                        {"text": "He was alive and healthy moments before.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "An aerial vehicle caused his death.", "type": true},
+                        {"text": "There was a lake several kilometers away from the forest.", "type": true},
+                        {"text": "He was in the wrong place at the wrong time.", "type": true},
+                        {"text": "The river he was in was prohibited for diving.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "9",
+                "title": "The Expensive Ingredient",
+                "locked": false,
+                "short": "A chef adds one last ingredient to his pot, and because of it, he loses the house where he lives.",
+                "answer": "A finalist in a culinary reality show accidentally added sugar instead of salt due to nervousness. He lost the competition and the prize money needed to save his house from foreclosure."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "He did not suffer any physical injury from his mistake.", "type": true},
+                        {"text": "His work was being judged by others.", "type": true},
+                        {"text": "His family panicked seeing the situation.", "type": true},
+                        {"text": "Neighbors called the fire department after the incident.", "type": false}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "A large clock on the wall indicated high pressure.", "type": true},
+                        {"text": "His mistake was due to distraction, not skill.", "type": true},
+                        {"text": "A strong smell spread through the neighborhood.", "type": false},
+                        {"text": "The error was in one of the most common kitchen ingredients.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "Two identical containers held different white powders.", "type": true},
+                        {"text": "His mistake was witnessed by several people.", "type": true},
+                        {"text": "He was competing for a large cash prize.", "type": true},
+                        {"text": "He felt sudden dizziness right after finishing the dish.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "10",
+                "title": "The Deadly Shoes",
+                "locked": false,
+                "short": "A woman buys a new pair of shoes, takes ten steps, and dies.",
+                "answer": "She was a circus tightrope walker. The new shoes had less grip than her old ones. After ten steps on the tightrope, she slipped and fell to her death."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "The ground was very far from where she took ten steps.", "type": true},
+                        {"text": "The shoes were brand new and in perfect condition.", "type": true},
+                        {"text": "Her death was an unexpected spectacle for many.", "type": true},
+                        {"text": "She had argued with a colleague just before dying.", "type": false}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "She wore a shiny, eye-catching costume when she died.", "type": true},
+                        {"text": "The steps were taken on a perfectly straight and narrow line.", "type": true},
+                        {"text": "Hundreds of eyes watched silently.", "type": true},
+                        {"text": "The music stopped the moment she fell.", "type": false}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "The soles of the new shoes were too smooth.", "type": true},
+                        {"text": "Her main tool was a stretched steel cable.", "type": true},
+                        {"text": "The smell of popcorn was in the air.", "type": true},
+                        {"text": "She was pushed.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "11",
+                "title": "The Wrong Key",
+                "locked": false,
+                "short": "A man arrives late at night in a building, opens an apartment door with a key, and freezes upon seeing something unexpected.",
+                "answer": "He had lost his original key earlier that day and received a spare key from the doorman. Unaware it opened multiple doors, he accidentally entered the neighbor's apartment. Inside, he saw his wife in the neighbor's arms, discovering her affair."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "The man had lost his original key hours earlier.", "type": true},
+                        {"text": "The surprise caused a strong emotional impact.", "type": true},
+                        {"text": "His wife screamed for help as soon as she saw him.", "type": false},
+                        {"text": "There were two people inside the apartment.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "The apartment he entered was not his.", "type": true},
+                        {"text": "He saw an unexpected person upon entering.", "type": true},
+                        {"text": "Someone was in danger.", "type": false},
+                        {"text": "The environment was dark.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "The key he used worked for more than one door.", "type": true},
+                        {"text": "He heard heavy breathing before entering.", "type": true},
+                        {"text": "Someone inside the apartment was holding a weapon.", "type": false},
+                        {"text": "Both people inside were as surprised as he was.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "12",
+                "title": "The Sound of Death",
+                "locked": false,
+                "short": "The music stopped. Moments later, the woman died.",
+                "answer": "The woman was a circus tightrope walker who performed her act completely blindfolded. The live music was her only reference to know when she had reached the end of the platform. That night, the sound system failed and the music suddenly stopped. Without her auditory reference, she kept walking into the void and fell to her death."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "Her death was witnessed by hundreds of people.", "type": true},
+                        {"text": "No one touched the woman to cause her death.", "type": true},
+                        {"text": "She received a threatening note before the incident.", "type": false},
+                        {"text": "She died from a fall.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "The woman was perfectly healthy.", "type": true},
+                        {"text": "She was working at the time of her death.", "type": true},
+                        {"text": "Her coworker was jealous of her potential.", "type": false},
+                        {"text": "Her ability to see was irrelevant to what she was doing.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "The cause of the music stopping was a technical failure.", "type": true},
+                        {"text": "If the music had continued, she would still be alive.", "type": true},
+                        {"text": "She relied on the music as an accurate reference for her performance.", "type": true},
+                        {"text": "The sound system was deliberately damaged to cause her death.", "type": false}
                     ]
                 }
             ]
         }
     ]
 }
-

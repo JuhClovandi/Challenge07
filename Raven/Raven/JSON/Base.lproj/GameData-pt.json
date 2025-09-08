@@ -4,7 +4,7 @@
         {
             "story": {
                 "id": "1",
-                "title": "História TESTE 1",
+                "title": "Homem do envelope",
                 "locked": false,
                 "short": "Um homem entra apressado pela porta segurando um envelope, mas para ao ouvir um som e fica imóvel.",
                 "answer": "O homem entrou no hospital com o resultado de um exame que poderia salvar a vida de sua irmã. Quando se aproximou do quarto dela ouviu o som do monitor desligar, então percebeu que ela tinha acabado de falecer."
@@ -13,64 +13,28 @@
                 {
                     "round": 1,
                     "tips": [
-                        {
-                            "text": "Ele entrou sozinho no local.",
-                            "type": true
-                        },
-                        {
-                            "text": "O ambiente tinha um cheiro característico de limpeza.",
-                            "type": true
-                        },
-                        {
-                            "text": "Ele viu alguém sair do quarto momentos antes do som.",
-                            "type": false
-                        },
-                        {
-                            "text": "O envelope continha um documento importante.",
-                            "type": true
-                        }
+                        {"text": "Ele entrou sozinho no local.", "type": true},
+                        {"text": "O ambiente tinha um cheiro característico de limpeza.", "type": true},
+                        {"text": "Ele viu alguém sair do quarto momentos antes do som.", "type": false},
+                        {"text": "O envelope continha um documento importante.", "type": true}
                     ]
                 },
                 {
                     "round": 2,
                     "tips": [
-                        {
-                            "text": "Ele recebeu uma ligação antes de ouvir o som.",
-                            "type": false
-                        },
-                        {
-                            "text": "O conteúdo do envelope poderia salvar alguém.",
-                            "type": true
-                        },
-                        {
-                            "text": "O som indicava uma mudança.",
-                            "type": true
-                        },
-                        {
-                            "text": "O ambiente era dividido em alas.",
-                            "type": true
-                        }
+                        {"text": "Ele recebeu uma ligação antes de ouvir o som.", "type": false},
+                        {"text": "O conteúdo do envelope poderia salvar alguém.", "type": true},
+                        {"text": "O som indicava uma mudança.", "type": true},
+                        {"text": "O ambiente era dividido em alas.", "type": true}
                     ]
                 },
                 {
                     "round": 3,
                     "tips": [
-                        {
-                            "text": "O som indicava que uma pessoa estava sem vida.",
-                            "type": true
-                        },
-                        {
-                            "text": "O nome de um familiar estava no envelope.",
-                            "type": true
-                        },
-                        {
-                            "text": "Ele ouviu passos atrás dele, mas não se virou.",
-                            "type": false
-                        },
-                        {
-                            "text": "Um som do bipe parecia monitorar algo importante.",
-                            "type": true
-                        }
+                        {"text": "O som indicava que uma pessoa estava sem vida.", "type": true},
+                        {"text": "O nome de um familiar estava no envelope.", "type": true},
+                        {"text": "Ele ouviu passos atrás dele, mas não se virou.", "type": false},
+                        {"text": "Um som do bipe parecia monitorar algo importante.", "type": true}
                     ]
                 }
             ]
@@ -78,7 +42,7 @@
         {
             "story": {
                 "id": "2",
-                "title": "História TESTE 2",
+                "title": "Mulher e o bilhete",
                 "locked": false,
                 "short": "Uma mulher que mora sozinha encontrou um bilhete estranho em seu apartamento: “Não confie em ninguém dentro de casa.”",
                 "answer": "A mulher sofre de uma doença neurológica que provoca alucinações e perda temporária de memória. Ela mesma escreveu o bilhete para se alertar, pois sua alucinação a fez acreditar que tinha mais alguém com ela, mesmo morando sozinha. A sensação de presença e o bilhete são manifestações da sua doença."
@@ -87,64 +51,408 @@
                 {
                     "round": 1,
                     "tips": [
-                        {
-                            "text": "Ela não saiu do apartamento antes de encontrar o bilhete.",
-                            "type": true
-                        },
-                        {
-                            "text": "Havia um leve cheiro no ar que ela não conseguia identificar, mas parecia familiar.",
-                            "type": false
-                        },
-                        {
-                            "text": "O bilhete estava em um local visível para ela assim que acordou.",
-                            "type": true
-                        },
-                        {
-                            "text": "Nenhum objeto fora do lugar chamou a atenção dela.",
-                            "type": true
-                        }
+                        {"text": "Ela não saiu do apartamento antes de encontrar o bilhete.", "type": true},
+                        {"text": "Havia um leve cheiro no ar que ela não conseguia identificar, mas parecia familiar.", "type": false},
+                        {"text": "O bilhete estava em um local visível para ela assim que acordou.", "type": true},
+                        {"text": "Nenhum objeto fora do lugar chamou a atenção dela.", "type": true}
                     ]
                 },
                 {
                     "round": 2,
                     "tips": [
-                        {
-                            "text": "A caligrafia do bilhete não lhe era estranha.",
-                            "type": true
-                        },
-                        {
-                            "text": "A mulher sentia que havia alguém ali com ela.",
-                            "type": true
-                        },
-                        {
-                            "text": "Às vezes, ela esquecia se já tinha trancado a porta ou não.",
-                            "type": true
-                        },
-                        {
-                            "text": "Móveis pareceram ter sido sutilmente tirados do lugar.",
-                            "type": false
-                        }
+                        {"text": "A caligrafia do bilhete não lhe era estranha.", "type": true},
+                        {"text": "A mulher sentia que havia alguém ali com ela.", "type": true},
+                        {"text": "Às vezes, ela esquecia se já tinha trancado a porta ou não.", "type": true},
+                        {"text": "Móveis pareceram ter sido sutilmente tirados do lugar.", "type": false}
                     ]
                 },
                 {
                     "round": 3,
                     "tips": [
-                        {
-                            "text": "A mulher frequentemente conversava sozinha.",
-                            "type": true
-                        },
-                        {
-                            "text": "A porta do apartamento estava trancada desde a noite anterior.",
-                            "type": true
-                        },
-                        {
-                            "text": "A mulher viu rastros de sujeira na entrada da casa.",
-                            "type": false
-                        },
-                        {
-                            "text": "Ela já havia encontrado bilhetes parecidos antes, como se viesse de alguém muito próximo.",
-                            "type": true
-                        }
+                        {"text": "A mulher frequentemente conversava sozinha.", "type": true},
+                        {"text": "A porta do apartamento estava trancada desde a noite anterior.", "type": true},
+                        {"text": "A mulher viu rastros de sujeira na entrada da casa.", "type": false},
+                        {"text": "Ela já havia encontrado bilhetes parecidos antes, como se viesse de alguém muito próximo.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "3",
+                "title": "Diário da casa antiga",
+                "locked": false,
+                "short": "Numa casa antiga, uma mulher encontra um diário com páginas arrancadas e decide ligar para a polícia.",
+                "answer": "No diário, havia a localização de um cômodo secreto na casa. Ao segui-la, a mulher encontra ossos humanos escondidos no local. Ela sabia que o diário pertencia ao antigo proprietário pois havia seu nome na capa, após a descoberta, decide denunciá-lo à polícia."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "Ela morava sozinha nessa casa.", "type": true},
+                        {"text": "Havia poeira no lugar onde foi encontrado o diário.", "type": true},
+                        {"text": "A casa parecia ter muitos segredos guardados.", "type": true},
+                        {"text": "O diário era de alguém próximo a ela.", "type": false}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "O autor parece estar apaixonado.", "type": false},
+                        {"text": "O diário continha anotações detalhadas sobre a casa.", "type": true},
+                        {"text": "Havia um nome conhecido na capa.", "type": true},
+                        {"text": "O segredo pertence a alguém que viveu ali antes.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "O antigo dono mudou-se para muito longe após a venda.", "type": true},
+                        {"text": "O autor descrevia encontros secretos com alguém da família.", "type": false},
+                        {"text": "O que ela encontra no local escondido pertenceu a um ser humano.", "type": true},
+                        {"text": "Ela não havia explorado a casa inteira.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "4",
+                "title": "Luke, o cachorro desaparecido",
+                "locked": false,
+                "short": "Ana recebeu uma caixa sem remetente. Dentro, havia uma chave antiga e um bilhete: 'Ele não está onde você pensa'. No dia seguinte, seu cão, Luke, desapareceu do quintal.",
+                "answer": "A chave era do antigo canil da cidade. A família de Ana, que ela pensava estar viajando, havia pegado o cachorro. Eles usaram o sumiço do cão como pretexto para atraí-la até o local, onde, na verdade, a aguardava com uma festa de aniversário surpresa."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "O cão era idoso e não costumava fugir.", "type": true},
+                        {"text": "A caligrafia no bilhete era vagamente familiar.", "type": true},
+                        {"text": "Um vizinho ouviu latidos desesperados durante a noite.", "type": false},
+                        {"text": "A caixa foi deixada na porta, não tinha selo dos correios.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "O portão do quintal estava fechado, sem sinais de ter sido forçado.", "type": true},
+                        {"text": "O aniversário de Ana estava se aproximando.", "type": true},
+                        {"text": "Ana recebeu uma ligação de um número desconhecido, mas ninguém falou.", "type": false},
+                        {"text": "A chave tinha um número gravado nela.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "A família dela era conhecida por fazer surpresas.", "type": true},
+                        {"text": "Luke era um cão dócil e iria facilmente com alguém conhecido.", "type": true},
+                        {"text": "O cão é de uma raça muito cara.", "type": false},
+                        {"text": "A chave não servia em nenhuma fechadura da casa de Ana.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "5",
+                "title": "Antônio Carlos e Maria Isabela",
+                "locked": false,
+                "short": "Antônio Carlos e Maria Isabela foram encontrados mortos no chão. Havia cacos de vidro e água por perto.",
+                "answer": "Antônio Carlos e Maria Isabela eram os nomes dos dois peixinhos dourados de estimação de uma família. O aquário redondo em que viviam (feito de vidro) caiu da estante, quebrou no chão e eles morreram por falta de água."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "A causa da morte foi asfixia.", "type": true},
+                        {"text": "Não houve crime nem veneno envolvido.", "type": true},
+                        {"text": "Uma janela foi encontrada aberta, sugerindo que um forte vento derrubou algo.", "type": false},
+                        {"text": "Os corpos das vítimas não ocupavam muito espaço no chão.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Antônio Carlos e Maria Isabela moravam juntos na mesma casa.", "type": true},
+                        {"text": "Eles não eram humanos.", "type": true},
+                        {"text": "Eram os nomes de dois atores famosos que ensaiavam uma peça e sofreram um acidente.", "type": false},
+                        {"text": "Eles eram incapazes de andar ou falar.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "Um gato assustado pode ter sido o culpado pelo incidente.", "type": true},
+                        {"text": "O vidro quebrado era parte da casa deles.", "type": true},
+                        {"text": "Se eles tivessem permanecido na água, estariam vivos.", "type": true},
+                        {"text": "Eles faziam parte de um pacto de suicídio.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "6",
+                "title": "O Carro Silencioso",
+                "locked": false,
+                "short": "Um homem para seu carro em um local completamente deserto, desce e, minutos depois, morre. Ele estava absolutamente sozinho.",
+                "answer": "O homem era um astronauta em uma missão na Lua. O 'carro' era, na verdade, um rover lunar. Ele parou o veículo em uma área deserta da superfície lunar para coletar amostras. Ao descer, seu traje espacial sofreu uma pequena perfuração, causando uma despressurização rápida e fatal."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "Ele morreu por causa de um acidente de trabalho.", "type": true},
+                        {"text": "No local da morte dele, a luz do sol nunca chega.", "type": false},
+                        {"text": "A causa da morte foi a falta de ar.", "type": true},
+                        {"text": "Ele estava muito distante de sua verdadeira casa.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Qualquer movimento causava pequenos tremores no lugar.", "type": false},
+                        {"text": "O veículo que ele dirigia era elétrico e bem projetado para o local.", "type": true},
+                        {"text": "Ele não poderia sobreviver por mais de um minuto fora do carro.", "type": true},
+                        {"text": "No local onde ele morreu, não há som e não há vento.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "O equipamento que ele vestia era importante para sua sobrevivência.", "type": true},
+                        {"text": "Uma falha em sua 'roupa' causou sua morte.", "type": true},
+                        {"text": "Do local de sua morte, o céu é sempre preto e estrelado.", "type": true},
+                        {"text": "A estrutura ao redor dele parecia estar sob pressão constante.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "7",
+                "title": "O Hotel da Falência",
+                "locked": false,
+                "short": "Um homem empurrou seu carro, parou em um hotel e perdeu toda a sua fortuna.",
+                "answer": "O homem estava jogando Banco Imobiliário. Sua peça era o peão de 'carro'. Ele 'empurrou' a peça ao jogar os dados, e seu azar foi cair em uma propriedade de outro jogador que já tinha um hotel construído. O aluguel que ele teve que pagar foi tão alto que o levou à falência, fazendo-o perder toda a sua fortuna no jogo."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "Havia outras pessoas com ele, e uma delas se beneficiou de sua perda.", "type": true},
+                        {"text": "Problemas inesperados apareceram durante sua estadia.", "type": false},
+                        {"text": "O hotel pertencia a um de seus amigos.", "type": true},
+                        {"text": "A sorte foi um fator determinante para o que aconteceu.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Ele gostava de jogos que envolviam dinheiro.", "type": true},
+                        {"text": "O hotel era menor do que ele esperava.", "type": true},
+                        {"text": "Uma decisão impulsiva mudou completamente seu destino.", "type": false},
+                        {"text": "Ele foi obrigado a parar naquele lugar.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "O dinheiro que ele perdeu não tinha valor fora daquele lugar.", "type": true},
+                        {"text": "Toda a ação aconteceu em um espaço limitado.", "type": true},
+                        {"text": "O carro dele cabia na palma da mão.", "type": true},
+                        {"text": "Um erro mínimo custou caro.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "8",
+                "title": "O Mergulhador",
+                "locked": false,
+                "short": "O corpo de um homem, vestindo equipamento completo de mergulho, é encontrado no meio de uma grande floresta queimada.",
+                "answer": "Ele estava mergulhando em um lago quando um helicóptero de combate a incêndios o coletou junto com a água e o despejou sobre o fogo. Devido à altura, o homem não sobreviveu ao impacto."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "Ele não morreu queimado, nem afogado.", "type": true},
+                        {"text": "Ele chegou à floresta vindo de cima.", "type": true},
+                        {"text": "Ele estava fugindo de algo perigoso.", "type": false},
+                        {"text": "A morte dele foi um completo acidente.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "A água esteve envolvida em seu transporte, mas não em sua morte.", "type": true},
+                        {"text": "Um incêndio de grandes proporções estava acontecendo.", "type": true},
+                        {"text": "O tanque de oxigênio dele parecia estar arranhado.", "type": false},
+                        {"text": "Ele estava vivo e saudável momentos antes.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "Um veículo aéreo foi a responsável pela morte.", "type": true},
+                        {"text": "Havia um lago que ficava a alguns quilômetros da floresta.", "type": true},
+                        {"text": "Ele estava no lugar errado, na hora errada.", "type": true},
+                        {"text": "O rio onde ele estava era proibido para mergulho.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "9",
+                "title": "O Jogo: O Ingrediente Caro",
+                "locked": false,
+                "short": "Um cozinheiro adiciona um último ingrediente à sua panela e, por causa desse simples ato, perde a casa onde mora.",
+                "answer": "Um homem finalista de um reality show de culinária perdeu o prêmio de centenas de milhares de reais ao adicionar, por nervosismo, açúcar ao invés de sal. Após perder a competição, ele não recebeu o dinheiro que precisava para salvar sua casa da hipoteca."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "Ele não sofreu nenhum ferimento físico por causa do seu erro.", "type": true},
+                        {"text": "O trabalho dele estava sendo julgado por outras pessoas.", "type": true},
+                        {"text": "Sua família ficou desesperada ao ver a situação.", "type": true},
+                        {"text": "Os vizinhos chamaram os bombeiros depois do acontecimento.", "type": false}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Um grande relógio na parede indicava alta pressão.", "type": true},
+                        {"text": "O erro dele foi de desatenção, não de habilidade.", "type": true},
+                        {"text": "Um cheiro forte se espalhou pela vizinhança.", "type": false},
+                        {"text": "A falha estava em um dos ingredientes mais comuns da cozinha.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "Dois recipientes idênticos continham pós brancos distintos.", "type": true},
+                        {"text": "O erro do cozinheiro foi assistido por várias pessoas.", "type": true},
+                        {"text": "Ele estava competindo por um grande prêmio em dinheiro.", "type": true},
+                        {"text": "Ele sentiu uma tontura súbita logo após terminar o prato.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "10",
+                "title": "Sapatos Mortais",
+                "locked": false,
+                "short": "Uma mulher compra um par de sapatos novos. Ela dá apenas dez passos com eles e morre.",
+                "answer": "Ela era uma equilibrista de circo. Os sapatos novos não tinham a mesma aderência dos antigos. Seus dez passos foram na corda bamba, antes de ela escorregar e cair para a morte."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "O chão estava muito longe de onde ela deu os dez passos.", "type": true},
+                        {"text": "Os sapatos eram perfeitamente novos e estavam em condição impecável.", "type": true},
+                        {"text": "Sua morte foi um espetáculo inesperado para muitas pessoas.", "type": true},
+                        {"text": "Pouco antes de morrer, ela havia discutido com um colega de trabalho.", "type": false}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "Ela estava vestindo um figurino brilhante e chamativo quando morreu.", "type": true},
+                        {"text": "Os passos foram dados sobre uma linha perfeitamente reta e estreita.", "type": true},
+                        {"text": "Centenas de olhos a observavam em silêncio.", "type": true},
+                        {"text": "A música parou no instante em que ela caiu.", "type": false}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "A sola dos sapatos novos era lisa demais.", "type": true},
+                        {"text": "Seu principal instrumento de trabalho era um cabo de aço esticado.", "type": true},
+                        {"text": "O cheiro de pipoca pairava no ar.", "type": true},
+                        {"text": "Ela foi empurrada.", "type": false}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "11",
+                "title": "A chave errada",
+                "locked": false,
+                "short": "Um homem chega tarde da noite em um prédio, abre a porta de um apartamento com uma chave, mas assim que entra congela ao ver algo inesperado.",
+                "answer": "Naquele dia, o homem havia perdido sua chave mais cedo e, ao receber a chave reserva do porteiro, não sabia que ela abria mais de uma porta. Já era noite e o corredor estava escuro, o que contribuiu para a confusão. Sem perceber, acabou abrindo por engano a porta do apartamento vizinho. Ao entrar, ficou paralisado: viu sua própria esposa nos braços do vizinho, descobrindo assim a traição."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "O homem havia perdido sua chave original algumas horas antes.", "type": true},
+                        {"text": "A surpresa causou grande impacto emocional.", "type": true},
+                        {"text": "A esposa do homem gritou socorro assim que o viu.", "type": false},
+                        {"text": "Dentro do apartamento havia duas pessoas.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "O apartamento em que ele entrou não era o seu.", "type": true},
+                        {"text": "Ele viu uma pessoa inesperada ao entrar no apartamento.", "type": true},
+                        {"text": "Alguém estava em perigo.", "type": false},
+                        {"text": "O ambiente estava escuro.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "A chave que ele usou funcionava em mais de uma porta.", "type": true},
+                        {"text": "Ele estava ouvindo respirações fortes antes de entrar.", "type": true},
+                        {"text": "Alguém dentro do apartamento estava segurando uma arma.", "type": false},
+                        {"text": "As duas pessoas no apartamento ficaram tão surpresas quanto ele.", "type": true}
+                    ]
+                }
+            ]
+        },
+        {
+            "story": {
+                "id": "12",
+                "title": "O Som da Morte",
+                "locked": false,
+                "short": "A música parou. Momentos depois, a mulher morreu.",
+                "answer": "A mulher era uma equilibrista de circo que realizava seu número na corda bamba completamente vendada. A música ao vivo era a sua única referência para saber quando havia chegado ao fim da plataforma. Naquela noite, o sistema de som falhou e a música parou de repente. Sem sua referência auditiva, ela continuou andando no vazio e caiu para a morte."
+            },
+            "rounds": [
+                {
+                    "round": 1,
+                    "tips": [
+                        {"text": "A morte dela foi testemunhada por centenas de pessoas.", "type": true},
+                        {"text": "Ninguém tocou na mulher para que ela morresse.", "type": true},
+                        {"text": "Ela recebeu um bilhete com uma ameaça antes do ocorrido.", "type": false},
+                        {"text": "Ela morreu devido a uma queda.", "type": true}
+                    ]
+                },
+                {
+                    "round": 2,
+                    "tips": [
+                        {"text": "A mulher estava perfeitamente saudável.", "type": true},
+                        {"text": "Ela estava trabalhando no momento de sua morte.", "type": true},
+                        {"text": "Seu colega de trabalho tinha inveja do potencial dela.", "type": false},
+                        {"text": "Sua capacidade de ver não tinha importância para o que ela estava fazendo.", "type": true}
+                    ]
+                },
+                {
+                    "round": 3,
+                    "tips": [
+                        {"text": "A causa da parada da música foi uma falha técnica.", "type": true},
+                        {"text": "Se a música tivesse continuado, ela estaria viva.", "type": true},
+                        {"text": "Ela dependia da música para ter uma referência precisa em sua apresentação.", "type": true},
+                        {"text": "O sistema de som foi danificado propositalmente para causar a morte dela.", "type": false}
                     ]
                 }
             ]

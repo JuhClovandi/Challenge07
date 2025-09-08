@@ -138,6 +138,8 @@ class ViewController: UIViewController {
     //MARK: - Configura botão Próximo
     func setupButton() {
         updateButtonTitle(page: page)
+        botao.titleLabel?.font = UIFont(name: "MozillaHeadlineCondensed-Medium", size: 18) // Define a fonte e o tamanho
+
         botao.setTitleColor(UIColor(named: "TipsTextColor"), for: .normal)
         botao.backgroundColor = UIColor(named: "ButtonBackground")
         botao.layer.cornerRadius = 20
