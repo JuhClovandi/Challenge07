@@ -73,7 +73,7 @@ struct FinalHistory: View {
                                     }
                                 }                
                             }
-                            NavigationLink(destination: ConfirmationView()) {
+                            NavigationLink(destination: CategoryView()) {
                                 Text("Finalizar História")
                                     .font(.custom("MozillaHeadlineCondensed-ExtraLight", size: 15, relativeTo: .body))
                                 // mudar fonte

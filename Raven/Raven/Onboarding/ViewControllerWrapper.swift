@@ -27,37 +27,23 @@
 
 import SwiftUI
 
-// Este struct conecta a tela UIKit com o SwiftUI
 struct ViewControllerWrapper: UIViewControllerRepresentable {
     
-    
-    //Criar a tela UIKit quando o SwiftUI precisa mostrar
-    func makeUIViewController(context: Context) -> some UIViewController {
-        let vc = ViewController() //intancia o UIViewController
-        /*
-        Aqui no return eu coloco que vai estar dentro de uma NavigatioController caso eu queira montar uma hierarquia de telas.
-        mas nesse caso nao é necessario ja que é o onBoarding
-         */
-        return vc
-    }
-    
-    //Atualiza a tela UIKit quando alguma coisa muda no SwiftUI
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        //CODE
-    }
-    
-    //Cria o Coodinator que vai receber os eventos do UIKit
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
-    //Coodinator é o tradutor entre UIKit e SwiftUI
-    class Coordinator: NSObject {
-        var parent: ViewControllerWrapper
+    func makeUIViewController(context: Context) -> UIViewController {
+        // 1. Cria a sua tela de Onboarding (ViewController)
+        let onboardingVC = ViewController()
         
-        init(_ parent: ViewControllerWrapper) {
-            self.parent = parent
-        }
+        // 2. Cria um UINavigationController e define o onboarding como a tela inicial dele
+        let navigationController = UINavigationController(rootViewController: onboardingVC)
         
+        // 3. Esconde a barra de navegação padrão do UIKit para manter seu layout limpo
+        navigationController.isNavigationBarHidden = true
+        
+        // 4. Retorna o UINavigationController em vez do ViewController sozinho
+        return navigationController
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        // Nenhuma mudança necessária aqui
     }
 }

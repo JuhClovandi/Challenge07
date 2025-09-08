@@ -179,21 +179,15 @@ class ViewController: UIViewController {
             //Mudar quando for subir 
 //            UserDefaults.standard.set(true, forKey: "hasSeenOnboarding")
             //Chegou no final → navegar para ContentView
-            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-               let window = scene.windows.first {
-
-                let contentView = UIHostingController(rootView: CategoryView())
-                
-                contentView.view.frame = window.bounds.offsetBy(dx: window.bounds.width, dy: 0)
-                window.addSubview(contentView.view)
-                
-                UIView.animate(withDuration: 0.5, animations: {
-                    contentView.view.frame = window.bounds
-                    window.rootViewController?.view.frame = window.bounds.offsetBy(dx: -window.bounds.width, dy: 0)
-                }, completion: { _ in
-                    window.rootViewController = contentView
-                })
-            }
+            // 1. Cria a sua View do SwiftUI
+                        let swiftUIView = CategoryView()
+                        
+                        // 2. Encapsula a View do SwiftUI em um UIHostingController
+                        let hostingController = UIHostingController(rootView: swiftUIView)
+                        
+                        // 3. Usa o navigationController para empurrar a nova tela
+                        self.navigationController?.pushViewController(hostingController, animated: true)
+                    
         }
                 
     }
