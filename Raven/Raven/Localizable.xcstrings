@@ -327,13 +327,137 @@
       }
     },
     "Onboarding.Button.Text1" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximo"
+          }
+        }
+      }
     },
     "Onboarding.Button.Text2" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completar "
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The game must be played in groups. Choose one person to be the Game Master."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O jogo deve ser jogado em grupo. Escolham uma pessoa para ser o Mestre de Jogo."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Master reads the initial description to everyone and keeps the full story to themselves, without revealing it to the others."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Mestre lê a descrição inicial para todos e guarda a história completa para si mesmo, sem revelar aos outros."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In each round, the Master will present clues about the case. One of them will be false and may mislead the group."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A cada rodada, o mestre apresentará dicas sobre o caso. Uma delas será falsa e poderá confundir o grupo."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The goal of the game is to build the correct context of the story. Players must debate possibilities while analyzing the clues."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O objetivo do jogo é construir o contexto correto da história.\nOs jogadores devem debater possibilidades enquanto analisam as dicas."
+          }
+        }
+      }
+    },
+    "Onboarding.Instruction.Text5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The game ends when the group presents its final interpretation and the Master reveals the true story."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O jogo termina quando o grupo apresenta sua interpretação final e o Mestre revela a história verdadeira."
+          }
+        }
+      }
     },
     "Onboarding.Title.Text" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Game Instructions"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instruções de Jogo"
+          }
+        }
+      }
     },
     "Próxima rodada" : {
 

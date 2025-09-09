@@ -266,7 +266,7 @@ class OnboardingPage: UIViewController {
         labelInstruction.textAlignment = .center
         labelInstruction.numberOfLines = 0
         labelInstruction.textColor = .white
-        labelInstruction.font = UIFont(name: "MozillaHeadlineCondensed-ExtraLight", size: 24)
+        labelInstruction.font = UIFont(name: "MozillaHeadlineCondensed-ExtraLight", size: 20)
         labelInstruction.translatesAutoresizingMaskIntoConstraints = false
         
 
