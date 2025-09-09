@@ -15,13 +15,11 @@ struct CategoryCardView: View {
 
     var body: some View {
         HStack(spacing: 20) {
-            Image(systemName: "photo.on.rectangle.angled") // Ícone padrão
+            Image("category") // Ícone padrão
                 .frame(width: 100, height: 100)
                 .font(.system(size: 40))
                 .foregroundStyle(textColor)
                 .padding()
-                .background(Color.white.opacity(0.1))
-                .clipShape(RoundedRectangle(cornerRadius: 10))
 
             Text(categoryName)
                 .font(.custom("DMSerifText-Regular", size: 32, relativeTo: .title2))
