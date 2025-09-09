@@ -207,10 +207,6 @@
 				Base,
 				"Base 2",
 				"pt-BR",
-				"es-419 2",
-				"en 2",
-				"es-419",
-				"base 2",
 			);
 			mainGroup = 8298E4FF2E53AE5A00B0A107;
 			minimizedProjectReferenceProxies = 1;

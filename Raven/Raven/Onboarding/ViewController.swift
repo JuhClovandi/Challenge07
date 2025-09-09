@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     
     //Conteudo das telas
     let onboardingPages = [
-        (image: "person.3.fill", instruction: "Onboarding.Instruction.Text1"),
-        (image: "tray.fill", instruction: "Onboarding.Instruction.Text2"),
-        (image: "star.fill", instruction: "Onboarding.Instruction.Text3"),
-        (image: "person.3.fill", instruction: "Onboarding.Instruction.Text4"),
-        (image: "tray.fill", instruction: "Onboarding.Instruction.Text5")
+        (image: "Onboarding01", instruction: "Onboarding.Instruction.Text1"),
+        (image: "Onboarding02", instruction: "Onboarding.Instruction.Text2"),
+        (image: "Onboarding03", instruction: "Onboarding.Instruction.Text3"),
+        (image: "Onboarding04", instruction: "Onboarding.Instruction.Text4"),
+        (image: "Onboarding05", instruction: "Onboarding.Instruction.Text5")
     ]
     
     //Armazena as páginas criadas
@@ -254,9 +254,10 @@ class OnboardingPage: UIViewController {
         view.backgroundColor = UIColor(named: "Background")
         
         //Imagem central
-        let imageView = UIImageView(image: UIImage(systemName: imageName))
+        let imageView = UIImageView(image: UIImage(named: imageName))
         imageView.tintColor = .white
         imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         //Texto de instrução
@@ -276,7 +277,7 @@ class OnboardingPage: UIViewController {
         NSLayoutConstraint.activate([
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40),
-            imageView.heightAnchor.constraint(equalToConstant: 136),
+            imageView.heightAnchor.constraint(equalToConstant: 280),
             
             labelInstruction.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             labelInstruction.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 40),
