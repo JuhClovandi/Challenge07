@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CardFrontView: View {
+    let storyId: String
     let description: String
     let width: CGFloat
     let height: CGFloat
@@ -16,14 +17,16 @@ struct CardFrontView: View {
             
             Spacer()
             
-            RoundedRectangle(cornerRadius: 15) // Cantos um pouco mais suaves
-                .fill(Color.clear)
-                .frame(height: 180) // Frame um pouco menor
+            RoundedRectangle(cornerRadius: 15) // Cantos um pouco 
+                .fill(ThemeColors.cardBackground) // mantém a cor original
                 .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(ThemeColors.textSecondary.opacity(0.3), lineWidth: 2) // Borda mais sutil
+                    Image(storyId)
+                        .resizable()
+                        .scaledToFill()
+                        .clipped()
+                        .cornerRadius(12)
                 )
-                .padding(.horizontal, 20) // Padding para não colar nas bordas
+                .aspectRatio(1.0, contentMode: .fit)
 
             Spacer()
 
@@ -56,6 +59,6 @@ struct CardFrontView: View {
 #Preview {
     ZStack {
         ThemeColors.background.ignoresSafeArea()
-        CardFrontView(description: "Um cozinheiro adiciona um último ingrediente à sua panela...", width: 340, height: 500)
+        CardFrontView(storyId: "2", description: "Um cozinheiro adiciona um último ingrediente à sua panela...", width: 340, height: 500)
     }
 }

@@ -69,7 +69,7 @@ struct StoryDetailView: View {
                     ZStack {
                         let storyDetail = story.storyDetail
                         
-                        CardFrontView(description: storyDetail.short, width: cardWidth, height: cardHeight)
+                        CardFrontView(storyId: storyDetail.id, description: storyDetail.short, width: cardWidth, height: cardHeight)
                             .opacity(viewModel.isFlipped ? 0 : 1)
                             .onTapGesture {
                                 withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {

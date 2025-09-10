@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct HistoriesView: View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var appState: AppState
     let stories: [Story]
     
@@ -17,10 +18,20 @@ struct HistoriesView: View {
                 ThemeColors.background.ignoresSafeArea()
                 if goToOnboarding {
                     OnboardingView()
-                }else{
+                } else {
                     VStack(spacing: 0) {
                         // --- Cabeçalho Customizado e Responsivo ---
                         HStack {
+                            Button(action: {
+                                dismiss()
+                            }, label: {
+                                Image(systemName: "chevron.left")
+                                    .font(.title)
+                                    .foregroundColor(ThemeColors.textPrimary)
+                            })
+                            
+                            Spacer()
+                            
                             Text("Histórias")
                                 .font(.custom("Palatino-Bold", size: 35, relativeTo: .largeTitle))
                                 .foregroundColor(ThemeColors.textPrimary)

@@ -156,10 +156,10 @@
         {
             "story": {
                 "id": "5",
-                "title": "Antônio Carlos e Maria Isabela",
+                "title": "Antônio e Maria",
                 "locked": false,
-                "short": "Antônio Carlos e Maria Isabela foram encontrados mortos no chão. Havia cacos de vidro e água por perto.",
-                "answer": "Antônio Carlos e Maria Isabela eram os nomes dos dois peixinhos dourados de estimação de uma família. O aquário redondo em que viviam (feito de vidro) caiu da estante, quebrou no chão e eles morreram por falta de água."
+                "short": "Antônio e Maria foram encontrados mortos no chão. Havia cacos de vidro e água por perto.",
+                "answer": "Antônio e Maria eram os nomes dos dois peixinhos dourados de estimação de uma família. O aquário redondo em que viviam (feito de vidro) caiu da estante, quebrou no chão e eles morreram por falta de água."
             },
             "rounds": [
                 {

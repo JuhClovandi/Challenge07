@@ -6,8 +6,14 @@ struct HistoryCardView: View {
     var body: some View {
         VStack(spacing: 12) {
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white.opacity(0.15))
-                // Proporção ajustada para cards mais altos
+                .fill(ThemeColors.cardBackground) // mantém a cor original
+                .overlay(
+                    Image(story.storyDetail.id)
+                        .resizable()
+                        .scaledToFill()
+                        .clipped()
+                        .cornerRadius(12)
+                )
                 .aspectRatio(1.0, contentMode: .fit)
             
             Text(story.storyDetail.title)

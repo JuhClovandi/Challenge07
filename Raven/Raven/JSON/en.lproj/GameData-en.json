@@ -156,10 +156,10 @@
         {
             "story": {
                 "id": "5",
-                "title": "Antônio Carlos and Maria Isabela",
+                "title": "Antônio and Maria",
                 "locked": false,
-                "short": "Antônio Carlos and Maria Isabela were found dead on the floor. There were glass shards and water nearby.",
-                "answer": "Antônio Carlos and Maria Isabela were the names of two goldfish pets. Their round glass aquarium fell from a shelf, broke on the floor, and they died from lack of water."
+                "short": "Antônio and Maria were found dead on the floor. There were glass shards and water nearby.",
+                "answer": "Antônio and Maria were the names of two goldfish pets. Their round glass aquarium fell from a shelf, broke on the floor, and they died from lack of water."
             },
             "rounds": [
                 {
