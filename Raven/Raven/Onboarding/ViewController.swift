@@ -178,8 +178,8 @@ class ViewController: UIViewController {
             pageControl.currentPage = page
             updateButtonTitle(page: page)
         } else {
-            //Mudar quando for subir 
-//            UserDefaults.standard.set(true, forKey: "hasSeenOnboarding")
+            
+            UserDefaults.standard.set(true, forKey: "hasSeenOnboarding")
             //Chegou no final → navegar para ContentView
             // 1. Cria a sua View do SwiftUI
                         let swiftUIView = CategoryView()
