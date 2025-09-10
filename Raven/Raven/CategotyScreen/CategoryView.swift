@@ -58,16 +58,6 @@ struct CategoryView: View {
                                 }
                                 .padding(.horizontal)
                             }
-                            
-                            // Exemplo com outra categoria, se houver
-                            if let gameData = viewModel.gameData {
-                                NavigationLink(destination: HistoriesView(stories: gameData.stories)) {
-                                    CategoryCardView(
-                                        categoryName: "Halloween"
-                                    )
-                                }
-                                .padding(.horizontal)
-                            }
                         }
                     }
                     .background(backgroundColor)
