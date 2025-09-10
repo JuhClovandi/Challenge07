@@ -73,6 +73,7 @@ struct FinalHistory: View {
                                     }
                                 }                
                             }
+                            Spacer()
                             NavigationLink(destination: CategoryView()) {
                                 Text("Finalizar História")
                                     .font(.custom("MozillaHeadlineCondensed-Medium", size: 15, relativeTo: .body))

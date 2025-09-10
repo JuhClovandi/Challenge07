@@ -163,11 +163,11 @@ class ViewController: UIViewController {
     //MARK: - Botão Próximo
     @objc func nextButtonTapped() {
         //Animação do botão
-        animateButton(botao)
+         animateButton(botao)
         
         //Vibração
-        let generator = UIImpactFeedbackGenerator(style: .light)
-        generator.impactOccurred()
+//        let generator = UIImpactFeedbackGenerator(style: .light)
+//        generator.impactOccurred()
         
  
         if page < pages.count - 1 {

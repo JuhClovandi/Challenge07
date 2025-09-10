@@ -43,16 +43,24 @@ struct CardBackView: View {
             .cornerRadius(20) // IMPORTANTE: CornerRadius aqui deve corresponder ao do card.
             .overlay(
                 VStack {
-                    Image(systemName: "hand.draw.fill")
-                        .font(.largeTitle)
-                        .scaleEffect(1.2) // Um pouco maior para destaque
-                        .padding(.bottom, 5)
-                    Text("RASPE PARA REVELAR")
-                        .font(.custom("Palatino-Bold", size: 20)) // Nova fonte e tamanho
+//                    Image(systemName: "hand.draw.fill")
+//                        .font(.largeTitle)
+//                        .scaleEffect(1.2) // Um pouco maior para destaque
+//                        .padding(.bottom, 5)
+                    Text("RASPE A CARTA")
+                        .foregroundColor(.buttonBackground)
+                        .font(.custom("DMSerifText-Regular", size: 34, relativeTo: .largeTitle)) // Nova fonte e tamanho
                         .fontWeight(.bold)
+                        .shadow(color: Color(hex: "#5757BE"), radius: 1 , x: 2, y: 2) // Sombra para o texto do overlay
+                    Text("e revele a história")
+                        .foregroundColor(ThemeColors.textPrimary.opacity(0.9)) // Cor dourada mais opaca
+                        .font(.custom("DMSerifText-Regular", size: 20, relativeTo: .largeTitle)) // Nova fonte e tamanho
+                        .fontWeight(.bold)
+                        .foregroundColor(.title)
+                        .shadow(color: Color(hex: "#9B89D1"), radius: 1 , x: 2, y: 2) // Sombra para o texto do overlay
                 }
-                .foregroundColor(ThemeColors.textPrimary.opacity(0.9)) // Cor dourada mais opaca
-                .shadow(color: .black.opacity(0.4), radius: 2, x: 0, y: 2) // Sombra para o texto do overlay
+
+
             )
     }
     

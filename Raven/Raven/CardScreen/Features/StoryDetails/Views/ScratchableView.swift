@@ -8,7 +8,7 @@ struct ScratchableView<Content: View, Overlay: View>: View {
     let cornerRadius: CGFloat
     
     @State private var path = Path()
-    @State private var isScratched = false
+    @State var isScratched = false
     @State private var hasDragged = false
     
     private let lineWidth: CGFloat = 50

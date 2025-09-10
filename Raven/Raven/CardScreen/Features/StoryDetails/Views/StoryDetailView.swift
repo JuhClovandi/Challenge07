@@ -16,7 +16,7 @@ struct HeaderView: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: 56)
             
-            HStack {
+            HStack(alignment: .bottom) {
                 Button(action: { dismiss() }) {
                     Image(systemName: "chevron.left")
                         .font(.title2.weight(.bold))
@@ -30,7 +30,7 @@ struct HeaderView: View {
                     Image(systemName: icon)
                         .font(.title2)
                     Text(title)
-                        .font(.custom("Palatino-Bold", size: 22))
+                        .font(.custom("Palatino-Bold", size: 22, relativeTo: .title2))
                         .fontWeight(.bold)
                 }
                 
@@ -39,6 +39,10 @@ struct HeaderView: View {
                 Image(systemName: "chevron.left")
                     .font(.title2.weight(.bold))
                     .opacity(0)
+                Image(systemName: "chevron.left")
+                    .font(.title2.weight(.bold))
+                    .opacity(0)
+
             }
             .foregroundColor(foregroundColor)
             .padding(.horizontal, 20)
@@ -101,7 +105,7 @@ struct StoryDetailView: View {
                     if viewModel.isFlipped {
                         NavigationLink(destination: RoundsView(story: story)) {
                             Text("Começar")
-                                .font(.custom("MozillaHeadlineCondensed-Medium", size: 22))
+                                .font(.custom("MozillaHeadlineCondensed-Medium", size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(ThemeColors.buttonText)
                                 .padding(.vertical, 14) // Botão mais fino

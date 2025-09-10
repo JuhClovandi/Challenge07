@@ -23,7 +23,7 @@ struct ThemeColors {
     
     // Cores do botão
     static let buttonBackground = Color(hex: "#FFCC28")
-    static let buttonText = Color(hex: "#402887")
+    static let buttonText = Color("TipsTextColor")
 }
 
 // Extensão para permitir o uso de códigos HEX diretamente.

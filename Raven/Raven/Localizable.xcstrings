@@ -213,6 +213,22 @@
         }
       }
     },
+    "e revele a história" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "and reveal the story"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e revele a história"
+          }
+        }
+      }
+    },
     "Fim das rodadas!" : {
       "localizations" : {
         "en" : {
@@ -492,18 +508,18 @@
         }
       }
     },
-    "RASPE PARA REVELAR" : {
+    "RASPE A CARTA" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SCRATCH TO REVEAL"
+            "value" : "SCRATCH THE CARD"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RASPE PARA REVELAR"
+            "value" : "RASPE A CARTA"
           }
         }
       }
