@@ -140,7 +140,7 @@ struct StoryDetailView: View {
             title: "História TESTE 2",
             locked: false,
             short: "Uma mulher que mora sozinha encontrou um bilhete estranho...",
-            answer: "A mulher sofre de uma doença neurológica..."
+            answer: "A mulher sofre de uma doença neurológica aaaaaaaaadadadadadadaddadadaddaaddadaddadadaadadaddadadadadadadadadadadaddadadadadadaddadadaadadadaddaaddadadaaaddadadaaddadadadadaadaddadadaddadadaddadadkskskskskskksksksjajbdbjobwBEVHbwv[bVBv[ububbvphdbhvbspvbjbc[ncj[shdbvhdhbvhslDHVB[subv[dsbvdhb[hBVSVB[SVBHFB[shbdbvubr[HSFBV[HBSF[HVB[VBsihdbvpsiHBDVBDV[bvhb[bvidbvhidbv]bvbhvb[dvb[hdbv[idBVHIbv[BVIHbdv[bdhvd"
         )
         let mockStory = Story(
             storyDetail: mockStoryDetail,

@@ -42,7 +42,7 @@
         {
             "story": {
                 "id": "2",
-                "title": "Mulher e o bilhete",
+                "title": "A mulher e o bilhete",
                 "locked": false,
                 "short": "Uma mulher que mora sozinha encontrou um bilhete estranho em seu apartamento: “Não confie em ninguém dentro de casa.”",
                 "answer": "A mulher sofre de uma doença neurológica que provoca alucinações e perda temporária de memória. Ela mesma escreveu o bilhete para se alertar, pois sua alucinação a fez acreditar que tinha mais alguém com ela, mesmo morando sozinha. A sensação de presença e o bilhete são manifestações da sua doença."
@@ -387,7 +387,7 @@
                 "title": "A chave errada",
                 "locked": false,
                 "short": "Um homem chega tarde da noite em um prédio, abre a porta de um apartamento com uma chave, mas assim que entra congela ao ver algo inesperado.",
-                "answer": "Naquele dia, o homem havia perdido sua chave mais cedo e, ao receber a chave reserva do porteiro, não sabia que ela abria mais de uma porta. Já era noite e o corredor estava escuro, o que contribuiu para a confusão. Sem perceber, acabou abrindo por engano a porta do apartamento vizinho. Ao entrar, ficou paralisado: viu sua própria esposa nos braços do vizinho, descobrindo assim a traição."
+                "answer": "O homem havia perdido sua chave e, ao receber a chave reserva do porteiro, não sabia que ela abria mais de uma porta. O corredor do predio estava escuro, o que contribuiu para a confusão. Ele acabou abrindo por engano a porta do apartamento vizinho. Ao entrar, ficou paralisado: viu sua esposa com seu vizinho."
             },
             "rounds": [
                 {
