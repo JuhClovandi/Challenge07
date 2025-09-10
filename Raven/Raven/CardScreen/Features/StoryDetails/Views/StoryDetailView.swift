@@ -6,7 +6,7 @@ struct HeaderView: View {
     let isFlipped: Bool
     
     var body: some View {
-        let title = isFlipped ? "Apenas para o mestre!" : "Para os jogadores!"
+        let title = isFlipped ? LocalizedStringResource(stringLiteral: "ApenasParaOMestre")  : LocalizedStringResource(stringLiteral: "ParaOsJogadores")
         let icon = isFlipped ? "crown.fill" : "person.3.fill"
         let backgroundColor = isFlipped ? Color(red: 1, green: 0.85, blue: 0.38) : Color(red: 0.34, green: 0.34, blue: 0.75)
         let foregroundColor = isFlipped ? Color(hex: "#402887") : Color.white
